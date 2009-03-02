@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <include href="otrunk_base.rng">
+    <define name="otObject">
+      <choice>
+        <element name="object">
+          <attribute name="refid">
+            <text />
+          </attribute>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.sensor.state.OTExperimentRequest</name>
+            <name>OTExperimentRequest</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="period">
+                  <data type="float" />
+                </attribute>
+                <element name="period">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="recordingTime">
+                  <data type="float" />
+                </attribute>
+                <element name="recordingTime">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="sensorRequests">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfChoice</name>
+            <name>PfChoice</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="choices">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="displayType">
+                  <text />
+                </attribute>
+                <element name="displayType">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="multipleSelect">
+                  <data type="boolean" />
+                </attribute>
+                <element name="multipleSelect">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="currentChoice">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfQuery</name>
+            <name>PfQuery</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="text">
+                <ref name="anyXMLFragment" />
+              </element>
+            </optional>
+            <optional>
+              <element name="responses">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.data.state.OTDataStore</name>
+            <name>OTDataStore</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="valuesString">
+                  <text />
+                </attribute>
+                <element name="valuesString">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="numberChannels">
+                  <text />
+                </attribute>
+                <element name="numberChannels">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="values">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="dt">
+                  <data type="float" />
+                </attribute>
+                <element name="dt">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="channelDescriptions">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.datagraph.state.OTDataCollector</name>
+            <name>OTDataCollector</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="title">
+                  <text />
+                </attribute>
+                <element name="title">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="graphables">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <element name="labels">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <element name="yDataAxis">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="xDataAxis">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="source">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="singleValue">
+                  <data type="boolean" />
+                </attribute>
+                <element name="singleValue">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="showTare">
+                  <data type="boolean" />
+                </attribute>
+                <element name="showTare">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="singleDataStore">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="dataSetFolder">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="multipleGraphableEnabled">
+                  <data type="boolean" />
+                </attribute>
+                <element name="multipleGraphableEnabled">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="rulerEnabled">
+                  <data type="boolean" />
+                </attribute>
+                <element name="rulerEnabled">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="autoScaleEnabled">
+                  <data type="boolean" />
+                </attribute>
+                <element name="autoScaleEnabled">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.sensor.state.OTDeviceConfig</name>
+            <name>OTDeviceConfig</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="deviceId">
+                  <text />
+                </attribute>
+                <element name="deviceId">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="configString">
+                  <text />
+                </attribute>
+                <element name="configString">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.sensor.state.OTSensorRequest</name>
+            <name>OTSensorRequest</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="type">
+                  <text />
+                </attribute>
+                <element name="type">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="port">
+                  <text />
+                </attribute>
+                <element name="port">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="unit">
+                  <text />
+                </attribute>
+                <element name="unit">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="stepSize">
+                  <data type="float" />
+                </attribute>
+                <element name="stepSize">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="requiredMax">
+                  <data type="float" />
+                </attribute>
+                <element name="requiredMax">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="requiredMin">
+                  <data type="float" />
+                </attribute>
+                <element name="requiredMin">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="displayPrecision">
+                  <text />
+                </attribute>
+                <element name="displayPrecision">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="paramMap">
+                <ref name="mapContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfImage</name>
+            <name>PfImage</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="imageURL">
+                  <text />
+                </attribute>
+                <element name="imageURL">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="imageBytes">
+                  <text />
+                </attribute>
+                <element name="imageBytes">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.sensor.state.OTInterfaceManager</name>
+            <name>OTInterfaceManager</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="deviceConfigs">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.data.state.OTDataField</name>
+            <name>OTDataField</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="dataProducer">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="dataStore">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfTechnicalHint</name>
+            <name>PfTechnicalHint</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="title">
+                  <text />
+                </attribute>
+                <element name="title">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="vendorChoice">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="hintMap">
+                <ref name="mapContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.graph.util.state.OTDrawingStamp</name>
+            <name>OTDrawingStamp</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="src">
+                  <text />
+                </attribute>
+                <element name="src">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="description">
+                  <text />
+                </attribute>
+                <element name="description">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.data.state.OTDataChannelDescription</name>
+            <name>OTDataChannelDescription</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="absoluteMax">
+                  <data type="float" />
+                </attribute>
+                <element name="absoluteMax">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="absoluteMin">
+                  <data type="float" />
+                </attribute>
+                <element name="absoluteMin">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="precision">
+                  <text />
+                </attribute>
+                <element name="precision">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="recommendMax">
+                  <data type="float" />
+                </attribute>
+                <element name="recommendMax">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="recommendMin">
+                  <data type="float" />
+                </attribute>
+                <element name="recommendMin">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="unit">
+                  <text />
+                </attribute>
+                <element name="unit">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.framework.otrunk.view.OTFrame</name>
+            <name>OTFrame</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="height">
+                  <text />
+                </attribute>
+                <element name="height">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="width">
+                  <text />
+                </attribute>
+                <element name="width">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="title">
+                  <text />
+                </attribute>
+                <element name="title">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.graph.util.state.OTDrawingImageIcon</name>
+            <name>OTDrawingImageIcon</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="color">
+                  <text />
+                </attribute>
+                <element name="color">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="x">
+                  <data type="float" />
+                </attribute>
+                <element name="x">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="y">
+                  <data type="float" />
+                </attribute>
+                <element name="y">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="src">
+                  <text />
+                </attribute>
+                <element name="src">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="stamp">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.datagraph.state.OTDataAxis</name>
+            <name>OTDataAxis</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="graphables">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="label">
+                  <text />
+                </attribute>
+                <element name="label">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="min">
+                  <data type="float" />
+                </attribute>
+                <element name="min">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="max">
+                  <data type="float" />
+                </attribute>
+                <element name="max">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="units">
+                  <text />
+                </attribute>
+                <element name="units">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.graph.util.state.OTDrawingShape</name>
+            <name>OTDrawingShape</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="type">
+                  <text />
+                </attribute>
+                <element name="type">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="height">
+                  <data type="float" />
+                </attribute>
+                <element name="height">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="width">
+                  <data type="float" />
+                </attribute>
+                <element name="width">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="color">
+                  <text />
+                </attribute>
+                <element name="color">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="x">
+                  <data type="float" />
+                </attribute>
+                <element name="x">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="y">
+                  <data type="float" />
+                </attribute>
+                <element name="y">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="selectable">
+                  <data type="boolean" />
+                </attribute>
+                <element name="selectable">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="fillType">
+                  <text />
+                </attribute>
+                <element name="fillType">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.datagraph.state.OTDataGraph</name>
+            <name>OTDataGraph</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="graphables">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <element name="labels">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <element name="yDataAxis">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="xDataAxis">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfCompoundDoc</name>
+            <name>PfCompoundDoc</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="bodyText">
+                <ref name="anyXMLFragment" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="input">
+                  <data type="boolean" />
+                </attribute>
+                <element name="input">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="documentRefs">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="markupLanguage">
+                  <text />
+                </attribute>
+                <element name="markupLanguage">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="children">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfTextObject</name>
+            <name>PfTextObject</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="bodyText">
+                  <text />
+                </attribute>
+                <element name="bodyText">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="input">
+                  <data type="boolean" />
+                </attribute>
+                <element name="input">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="children">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.datagraph.state.OTDataGraphable</name>
+            <name>OTDataGraphable</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="dataProducer">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="dataStore">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="drawing">
+                  <data type="boolean" />
+                </attribute>
+                <element name="drawing">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="controllable">
+                  <data type="boolean" />
+                </attribute>
+                <element name="controllable">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="color">
+                  <text />
+                </attribute>
+                <element name="color">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="drawMarks">
+                  <data type="boolean" />
+                </attribute>
+                <element name="drawMarks">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="locked">
+                  <data type="boolean" />
+                </attribute>
+                <element name="locked">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="xColumn">
+                  <text />
+                </attribute>
+                <element name="xColumn">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="yColumn">
+                  <text />
+                </attribute>
+                <element name="yColumn">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="connectPoints">
+                  <data type="boolean" />
+                </attribute>
+                <element name="connectPoints">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="allowHide">
+                  <data type="boolean" />
+                </attribute>
+                <element name="allowHide">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.sensor.state.OTSensorDataProxy</name>
+            <name>OTSensorDataProxy</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="request">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.graph.util.state.OTPointTextLabel</name>
+            <name>OTPointTextLabel</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="text">
+                  <text />
+                </attribute>
+                <element name="text">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="color">
+                  <text />
+                </attribute>
+                <element name="color">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="x">
+                  <data type="float" />
+                </attribute>
+                <element name="x">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="y">
+                  <data type="float" />
+                </attribute>
+                <element name="y">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="xData">
+                  <data type="float" />
+                </attribute>
+                <element name="xData">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="yData">
+                  <data type="float" />
+                </attribute>
+                <element name="yData">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="selectable">
+                  <data type="boolean" />
+                </attribute>
+                <element name="selectable">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.datagraph.state.OTMultiDataGraph</name>
+            <name>OTMultiDataGraph</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="rows">
+                  <text />
+                </attribute>
+                <element name="rows">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="graphs">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="columns">
+                  <text />
+                </attribute>
+                <element name="columns">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.datagraph.state.OTDataPointLabel</name>
+            <name>OTDataPointLabel</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="dataGraphable">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="text">
+                  <text />
+                </attribute>
+                <element name="text">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="color">
+                  <text />
+                </attribute>
+                <element name="color">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="x">
+                  <data type="float" />
+                </attribute>
+                <element name="x">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="y">
+                  <data type="float" />
+                </attribute>
+                <element name="y">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="xData">
+                  <data type="float" />
+                </attribute>
+                <element name="xData">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="yData">
+                  <data type="float" />
+                </attribute>
+                <element name="yData">
+                  <data type="float" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="selectable">
+                  <data type="boolean" />
+                </attribute>
+                <element name="selectable">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.otrunk.OTSystem</name>
+            <name>OTSystem</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="root">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="services">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <element name="firstObject">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <element name="firstObjectNoUserData">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.graph.util.state.OTDrawingTool</name>
+            <name>OTDrawingTool</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="graphables">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="backgroundImage">
+                  <text />
+                </attribute>
+                <element name="backgroundImage">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="stamps">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="gridVisible">
+                  <data type="boolean" />
+                </attribute>
+                <element name="gridVisible">
+                  <data type="boolean" />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="preferredWidth">
+                  <text />
+                </attribute>
+                <element name="preferredWidth">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="preferredHeight">
+                  <text />
+                </attribute>
+                <element name="preferredHeight">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.otrunk.view.OTViewEntry</name>
+            <name>OTViewEntry</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <choice>
+                <attribute name="objectClass">
+                  <text />
+                </attribute>
+                <element name="objectClass">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="viewClass">
+                  <text />
+                </attribute>
+                <element name="viewClass">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.otrunk.view.OTFolderObject</name>
+            <name>OTFolderObject</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="children">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfResponseTable</name>
+            <name>PfResponseTable</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="text">
+                <ref name="anyXMLFragment" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="correctAnswerText">
+                  <text />
+                </attribute>
+                <element name="correctAnswerText">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="cols">
+                  <text />
+                </attribute>
+                <element name="cols">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="rows">
+                  <text />
+                </attribute>
+                <element name="rows">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="cells">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.portfolio.objects.PfResponse</name>
+            <name>PfResponse</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="text">
+                <ref name="anyXMLFragment" />
+              </element>
+            </optional>
+            <optional>
+              <element name="input">
+                <choice>
+                  <empty />
+                  <attribute name="refid">
+                    <text />
+                  </attribute>
+                  <ref name="otObject" />
+                </choice>
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="markupLanguage">
+                  <text />
+                </attribute>
+                <element name="markupLanguage">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="queryID">
+                  <text />
+                </attribute>
+                <element name="queryID">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <element name="correctAnswer">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="correctAnswerText">
+                  <text />
+                </attribute>
+                <element name="correctAnswerText">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+        <element>
+          <choice>
+            <name>org.concord.otrunk.view.OTViewService</name>
+            <name>OTViewService</name>
+          </choice>
+          <optional>
+            <attribute name="local_id">
+              <text />
+            </attribute>
+          </optional>
+          <interleave>
+            <optional>
+              <element name="viewEntries">
+                <ref name="listContents" />
+              </element>
+            </optional>
+            <optional>
+              <choice>
+                <attribute name="name">
+                  <text />
+                </attribute>
+                <element name="name">
+                  <text />
+                </element>
+              </choice>
+            </optional>
+          </interleave>
+        </element>
+      </choice>
+    </define>
+  </include>
+</grammar>
+

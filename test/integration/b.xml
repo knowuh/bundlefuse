@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<thing>
+	<a>
+		<one></one>
+		<two></two>	
+	</a>
+	<b>
+		<one></one>
+		<two></two>
+		<three/>
+	</b>
+	<something_else></something_else>
+</thing>

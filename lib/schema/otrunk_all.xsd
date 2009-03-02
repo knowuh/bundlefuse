@@ -1,0 +1,4154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:include schemaLocation="otrunk_base.xsd"/>
+  <xs:group name="otObject">
+    <xs:choice>
+      <xs:element ref="object"/>
+      <xs:element ref="OTBreedOffspring"/>
+      <xs:element ref="OTObjectInterface"/>
+      <xs:element ref="OTObject"/>
+      <xs:element ref="OTChromosome"/>
+      <xs:element ref="OTDna"/>
+      <xs:element ref="OTOrganism"/>
+      <xs:element ref="OTPedigree"/>
+      <xs:element ref="OTSex"/>
+      <xs:element ref="OTStaticOrganism"/>
+      <xs:element ref="OTWorld"/>
+      <xs:element ref="OTExpression"/>
+      <xs:element ref="OTExpressionConstant"/>
+      <xs:element ref="OTExpressionSymbol"/>
+      <xs:element ref="OTExpressionConstantList"/>
+      <xs:element ref="OTExpressionSymbolList"/>
+      <xs:element ref="OTExpressionList"/>
+      <xs:element ref="OTExpressionResult"/>
+      <xs:element ref="OTExpressionVariable"/>
+      <xs:element ref="OTProgrammableCalculator"/>
+      <xs:element ref="OTProgrammableCalculatorNotebook"/>
+      <xs:element ref="OTProgrammableCalculatorResultChooser"/>
+      <xs:element ref="OTExpressionVariableViewConfig"/>
+      <xs:element ref="OTViewEntry"/>
+      <xs:element ref="OTProgrammableCalculatorViewConfig"/>
+      <xs:element ref="OTDataChannelDescription"/>
+      <xs:element ref="OTDataColumnDescription"/>
+      <xs:element ref="OTDataField"/>
+      <xs:element ref="OTDataFlowControl"/>
+      <xs:element ref="OTDataInput"/>
+      <xs:element ref="OTDataStore"/>
+      <xs:element ref="OTDataTable"/>
+      <xs:element ref="OTDifferentiatingProducerFilter"/>
+      <xs:element ref="OTDataProducerFilter"/>
+      <xs:element ref="OTDataProducer"/>
+      <xs:element ref="OTHoltsMethodSmoothing"/>
+      <xs:element ref="OTIntegratingProducerFilter"/>
+      <xs:element ref="OTLinearProducerFilter"/>
+      <xs:element ref="OTMultiWaveGenerator"/>
+      <xs:element ref="OTPropertyDataProducer"/>
+      <xs:element ref="OTUnitValue"/>
+      <xs:element ref="OTUnitValueViewConfig"/>
+      <xs:element ref="OTWave"/>
+      <xs:element ref="OTWaveGenerator"/>
+      <xs:element ref="OTAddGraphableAction"/>
+      <xs:element ref="OTAction"/>
+      <xs:element ref="DefaultOTObject"/>
+      <xs:element ref="OTDataAxis"/>
+      <xs:element ref="OTDataBarGraphable"/>
+      <xs:element ref="OTDataGraphable"/>
+      <xs:element ref="OTDataCollector"/>
+      <xs:element ref="OTDataGraph"/>
+      <xs:element ref="OTDataCollectorDataStore"/>
+      <xs:element ref="OTDataFlowingLine"/>
+      <xs:element ref="OTDataPointLabel"/>
+      <xs:element ref="OTDataAnnotation"/>
+      <xs:element ref="OTPointTextLabel"/>
+      <xs:element ref="OTDataPointRuler"/>
+      <xs:element ref="OTMultiDataGraph"/>
+      <xs:element ref="OTMultiDataSetControl"/>
+      <xs:element ref="OTPluginView"/>
+      <xs:element ref="OTFlowerInterface"/>
+      <xs:element ref="OTFlowerInterfaceExt"/>
+      <xs:element ref="OTFlowerObject"/>
+      <xs:element ref="OTDataFilterScript"/>
+      <xs:element ref="OTDataFilter"/>
+      <xs:element ref="OTFrame"/>
+      <xs:element ref="OTBlob"/>
+      <xs:element ref="OTDrawingImageIcon"/>
+      <xs:element ref="OTDrawingShape"/>
+      <xs:element ref="OTDrawingStamp"/>
+      <xs:element ref="OTDrawingTool"/>
+      <xs:element ref="OTDrawingTool2"/>
+      <xs:element ref="OTGraphArea"/>
+      <xs:element ref="OTPoint2D"/>
+      <xs:element ref="OTGraphFunctionList"/>
+      <xs:element ref="OTSelectableList"/>
+      <xs:element ref="OTLinearEquation"/>
+      <xs:element ref="OTFunctionEquation"/>
+      <xs:element ref="OTDefaultGraphFunction"/>
+      <xs:element ref="OTLinearFunction"/>
+      <xs:element ref="OTLinearFunctionPushpin"/>
+      <xs:element ref="OTLinearPiecewise"/>
+      <xs:element ref="OTLinearSegment"/>
+      <xs:element ref="OTQuadraticFunction"/>
+      <xs:element ref="OTValue"/>
+      <xs:element ref="OTGraphFunctionsScreen"/>
+      <xs:element ref="OTSoundDataCollector"/>
+      <xs:element ref="OTSoundDataProducer"/>
+      <xs:element ref="OTSoundGrapherModel"/>
+      <xs:element ref="OTInclude"/>
+      <xs:element ref="OTIncludeRootObject"/>
+      <xs:element ref="OTProperty"/>
+      <xs:element ref="OTStateRoot"/>
+      <xs:element ref="OTSystem"/>
+      <xs:element ref="OTMozSwing"/>
+      <xs:element ref="OTButton"/>
+      <xs:element ref="OTButton"/>
+      <xs:element ref="OTDIYActivity"/>
+      <xs:element ref="OTDIYSection"/>
+      <xs:element ref="OTDIYExternalRef"/>
+      <xs:element ref="OTDataCollectorViewConfig"/>
+      <xs:element ref="OTLabviewMonitor"/>
+      <xs:element ref="OTOverlay"/>
+      <xs:element ref="OTScript"/>
+      <xs:element ref="OTScriptEngineBundle"/>
+      <xs:element ref="OTScriptEngineEntry"/>
+      <xs:element ref="OTJRuby"/>
+      <xs:element ref="OTJavascript"/>
+      <xs:element ref="OTJython"/>
+      <xs:element ref="OTScriptButton"/>
+      <xs:element ref="OTScriptObject"/>
+      <xs:element ref="OTScriptVariable"/>
+      <xs:element ref="OTScriptVariableComponent"/>
+      <xs:element ref="OTScriptVariableRealObject"/>
+      <xs:element ref="OTScriptVariableView"/>
+      <xs:element ref="OTXHTMLScript"/>
+      <xs:element ref="OTPrototypeScriptController"/>
+      <xs:element ref="OTPrototypeController"/>
+      <xs:element ref="OTTemplateEngineBundle"/>
+      <xs:element ref="OTTemplateEngineEntry"/>
+      <xs:element ref="OTTemplateObject"/>
+      <xs:element ref="OTTemplateVariable"/>
+      <xs:element ref="OTAuthorNote"/>
+      <xs:element ref="OTTip"/>
+      <xs:element ref="OTUDLLabPage"/>
+      <xs:element ref="OTUDLMenuRule"/>
+      <xs:element ref="OTUDLVersionContainer"/>
+      <xs:element ref="OTUDLVersionContainerViewConfig"/>
+      <xs:element ref="OTUDLVersionedObject"/>
+      <xs:element ref="OTZoom"/>
+      <xs:element ref="OTZoomTransform"/>
+      <xs:element ref="OTUDLCoach"/>
+      <xs:element ref="OTUDLCoachGroup"/>
+      <xs:element ref="OTUDLCoachStatement"/>
+      <xs:element ref="OTDefinition"/>
+      <xs:element ref="OTDefinitionList"/>
+      <xs:element ref="OTDefinitionManager"/>
+      <xs:element ref="OTUDLComment"/>
+      <xs:element ref="OTText"/>
+      <xs:element ref="OTUDLCompoundDoc"/>
+      <xs:element ref="OTCompoundDoc"/>
+      <xs:element ref="OTDocument"/>
+      <xs:element ref="OTFolderObject"/>
+      <xs:element ref="OTUDLDocumentViewConfig"/>
+      <xs:element ref="OTDocumentViewConfig"/>
+      <xs:element ref="OTFrictionModel"/>
+      <xs:element ref="OTUDLLeveledQuestions"/>
+      <xs:element ref="OTUDLQuestion"/>
+      <xs:element ref="OTQuestion"/>
+      <xs:element ref="OTUDLQuestionViewConfig"/>
+      <xs:element ref="OTUDLReport"/>
+      <xs:element ref="OTUDLContainer"/>
+      <xs:element ref="OTUDLMenu"/>
+      <xs:element ref="OTUDLSection"/>
+      <xs:element ref="OTBorderContainer"/>
+      <xs:element ref="OTCardContainer"/>
+      <xs:element ref="OTChoice"/>
+      <xs:element ref="OTChoiceMultiple"/>
+      <xs:element ref="OTChoiceWithFeedback"/>
+      <xs:element ref="OTImage"/>
+      <xs:element ref="OTImageMap"/>
+      <xs:element ref="OTImageViewConfig"/>
+      <xs:element ref="OTListBox"/>
+      <xs:element ref="OTModeSwitcher"/>
+      <xs:element ref="OTPlacement"/>
+      <xs:element ref="OTPlacementContainer"/>
+      <xs:element ref="OTScrollContainer"/>
+      <xs:element ref="OTSlider"/>
+      <xs:element ref="OTSliderLabel"/>
+      <xs:element ref="OTSoundPlayer"/>
+      <xs:element ref="OTSplitPane"/>
+      <xs:element ref="OTTextPane"/>
+      <xs:element ref="OTNotebook"/>
+      <xs:element ref="OTNotebookMeasurement"/>
+      <xs:element ref="OTNotebookTester"/>
+      <xs:element ref="OTSnapshot"/>
+      <xs:element ref="OTSnapshotAlbum"/>
+      <xs:element ref="OTSnapshotButton"/>
+      <xs:element ref="OTSnapshotChooser"/>
+      <xs:element ref="OTChoiceViewConfig"/>
+      <xs:element ref="OTTree"/>
+      <xs:element ref="OTReferenceMap"/>
+      <xs:element ref="OTUserObject"/>
+      <xs:element ref="OTMainClassLauncher"/>
+      <xs:element ref="OTSharingBundle"/>
+      <xs:element ref="OTVelocityTemplate"/>
+      <xs:element ref="OTTemplate"/>
+      <xs:element ref="OTVelocityXHTMLViewEntry"/>
+      <xs:element ref="OTAuthorEmbedDefaultViewConfig"/>
+      <xs:element ref="OTChooserViewEntry"/>
+      <xs:element ref="OTFrameDisplayAction"/>
+      <xs:element ref="OTMultiUserRoot"/>
+      <xs:element ref="OTObjectEditViewConfig"/>
+      <xs:element ref="OTViewBundle"/>
+      <xs:element ref="OTViewChild"/>
+      <xs:element ref="OTViewEntry"/>
+      <xs:element ref="OTViewMode"/>
+      <xs:element ref="OTViewService"/>
+      <xs:element ref="OTCssText"/>
+      <xs:element ref="OTTextObject"/>
+      <xs:element ref="OTDocumentEditViewConfig"/>
+      <xs:element ref="OTPropertyReference"/>
+      <xs:element ref="OTPrototypeEventController"/>
+      <xs:element ref="OTPrototypeMapEntry"/>
+      <xs:element ref="OTPrototypeViewEntry"/>
+      <xs:element ref="OTCAPAReportTemplate"/>
+      <xs:element ref="OTMultimeterAnswerAssessment"/>
+      <xs:element ref="OTAssessment"/>
+      <xs:element ref="OTMultimeterAssessment"/>
+      <xs:element ref="OTMultimeterRubric"/>
+      <xs:element ref="OTUnit"/>
+      <xs:element ref="OTAssessmentViewConfig"/>
+      <xs:element ref="OTRubric"/>
+      <xs:element ref="OTRubricIndicator"/>
+      <xs:element ref="OTRubricIndicatorRange"/>
+      <xs:element ref="OTRubricIndicatorGrade"/>
+      <xs:element ref="OTRubricIndicatorValue"/>
+      <xs:element ref="OTCCKModel"/>
+      <xs:element ref="OTModelerModel"/>
+      <xs:element ref="OTModelerPage"/>
+      <xs:element ref="OTModelerPageViewConfig"/>
+      <xs:element ref="OTMwAction"/>
+      <xs:element ref="OTMwChannelData"/>
+      <xs:element ref="OTMwDataProducer"/>
+      <xs:element ref="OTMultipleDataProducer"/>
+      <xs:element ref="OTMwModelData"/>
+      <xs:element ref="OTMwObjectData"/>
+      <xs:element name="OTNLogoModel">
+        <xs:complexType mixed="true">
+          <xs:attribute name="local_id"/>
+          <xs:attribute name="authoredDataURL"/>
+          <xs:attribute name="objectWidth"/>
+          <xs:attribute name="objectHeight"/>
+          <xs:attribute name="name"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OTNLogoModel">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element ref="input"/>
+          </xs:sequence>
+          <xs:attribute name="local_id"/>
+          <xs:attribute name="authoredDataURL"/>
+          <xs:attribute name="objectWidth"/>
+          <xs:attribute name="objectHeight"/>
+          <xs:attribute name="authoredDataLocalURL"/>
+          <xs:attribute name="externalImageURL"/>
+          <xs:attribute name="name"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element ref="OTPhetBalloonsModel"/>
+      <xs:element ref="OTPhetDischargeLampsModel"/>
+      <xs:element ref="OTPhetFaradayModel"/>
+      <xs:element ref="OTPhetSkateParkModel"/>
+      <xs:element ref="OTPhetSoundModel"/>
+      <xs:element ref="OTPhetWaveModel"/>
+      <xs:element ref="RunActivityProperties"/>
+      <xs:element ref="PfChoice"/>
+      <xs:element ref="PfCompoundDoc"/>
+      <xs:element ref="PfDocument"/>
+      <xs:element ref="PfImage"/>
+      <xs:element ref="PfQuery"/>
+      <xs:element ref="PfResponse"/>
+      <xs:element ref="PfResponseTable"/>
+      <xs:element ref="PfTechnicalHint"/>
+      <xs:element ref="PfTextObject"/>
+      <xs:element ref="OTReactionTimer"/>
+      <xs:element ref="OTRTTInteractiveContainer"/>
+      <xs:element ref="OTLinearFunctionAnalyzer"/>
+      <xs:element ref="OTRTTInteractiveGrapher"/>
+      <xs:element ref="OTRTTInteractive"/>
+      <xs:element ref="OTLinearTransformer"/>
+      <xs:element ref="OTLinearPiecewiseGrapher"/>
+      <xs:element ref="OTQGrapher"/>
+      <xs:element ref="OTQualGraphable"/>
+      <xs:element ref="OTQualSegment"/>
+      <xs:element ref="OTQuadraticGrapher"/>
+      <xs:element ref="OTDeviceConfig"/>
+      <xs:element ref="OTExperimentRequest"/>
+      <xs:element ref="OTInterfaceManager"/>
+      <xs:element ref="OTLoggingRequest"/>
+      <xs:element ref="OTSensorDataProxy"/>
+      <xs:element ref="OTSensorRequest"/>
+      <xs:element ref="OTSetupLogger"/>
+      <xs:element ref="OTZeroSensor"/>
+      <xs:element ref="OTLoggerImporter"/>
+      <xs:element ref="OTLoggerRecordChooser"/>
+      <xs:element ref="OTDataFilterDescription"/>
+      <xs:element ref="OTGrid"/>
+    </xs:choice>
+  </xs:group>
+  <xs:element name="object">
+    <xs:complexType>
+      <xs:attribute name="refid"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTBreedOffspring">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="fatherOrganism"/>
+        <xs:element ref="motherOrganism"/>
+        <xs:element ref="childOrganism"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fatherOrganism">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="motherOrganism">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="childOrganism">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTObjectInterface">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTObject">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTChromosome">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="organism"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="organism">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDna">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="chromosome"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chromosome">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTOrganism">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="world"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sex"/>
+      <xs:attribute name="alleles"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="world">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPedigree">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="organisms"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="organisms" type="listContents"/>
+  <xs:element name="OTSex">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="fatherOrganism"/>
+        <xs:element ref="motherOrganism"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="replayButtonEnabled"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTStaticOrganism">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="organism"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTWorld">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="speciesPath"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpression">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="expression"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionConstant">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="note"/>
+        <xs:element ref="value"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="isPredefined"/>
+      <xs:attribute name="symbol"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="note">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="value">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionSymbol">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="value"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="symbol"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionConstantList">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="currentSymbol"/>
+        <xs:element ref="symbols"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="listTitle"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currentSymbol">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symbols" type="listContents"/>
+  <xs:element name="OTExpressionSymbolList">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="currentSymbol"/>
+        <xs:element ref="symbols"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="listTitle"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionList">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="expressions"/>
+        <xs:element ref="currentExpression"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="expressions" type="listContents"/>
+  <xs:element name="currentExpression">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionResult">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="formula"/>
+        <xs:element ref="value"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="symbol"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formula">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionVariable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="value"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="symbol"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTProgrammableCalculator">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="formulas"/>
+        <xs:element ref="constants"/>
+        <xs:element name="variables">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="resultValues"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showResultsSeparate"/>
+      <xs:attribute name="showResultsInTable"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formulas">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="constants">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resultValues">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTProgrammableCalculatorNotebook">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="notebook"/>
+        <xs:element ref="calculator"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="notebook">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calculator">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTProgrammableCalculatorResultChooser">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="calculator"/>
+        <xs:element ref="selectedAnswer"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="selectionButtonText"/>
+      <xs:attribute name="closeFrameAfterSelection"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selectedAnswer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExpressionVariableViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="unitsConversionList"/>
+        <xs:element ref="variableValueViewEntry"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="unitsConversionList" type="listContents"/>
+  <xs:element name="variableValueViewEntry">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTViewEntry">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTProgrammableCalculatorViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="unitsConversionList"/>
+        <xs:element ref="resultsTableViewEntry"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resultsTableViewEntry">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataChannelDescription">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="unit"/>
+      <xs:attribute name="precision"/>
+      <xs:attribute name="absoluteMin"/>
+      <xs:attribute name="absoluteMax"/>
+      <xs:attribute name="recommendMin"/>
+      <xs:attribute name="recommendMax"/>
+      <xs:attribute name="numericData"/>
+      <xs:attribute name="locked"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataColumnDescription">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataField">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataProducer"/>
+        <xs:element ref="dataStore"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataProducer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataStore">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataFlowControl">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataFlows"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataFlows" type="listContents"/>
+  <xs:element name="OTDataInput">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataProducer"/>
+        <xs:element ref="target"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="inputVariable"/>
+      <xs:attribute name="inputChannel"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="target">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataStore">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="values"/>
+        <xs:element ref="channelDescriptions"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="numberChannels"/>
+      <xs:attribute name="dt"/>
+      <xs:attribute name="valuesString"/>
+      <xs:attribute name="virtualChannels"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="values" type="listContents"/>
+  <xs:element name="channelDescriptions" type="listContents"/>
+  <xs:element name="OTDataTable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataStore"/>
+        <xs:element ref="columns"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showLastRowForAddingNew"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="columns" type="listContents"/>
+  <xs:element name="OTDifferentiatingProducerFilter">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="source"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="independentChannel"/>
+      <xs:attribute name="k0"/>
+      <xs:attribute name="k1"/>
+      <xs:attribute name="k2"/>
+      <xs:attribute name="k3"/>
+      <xs:attribute name="sourceChannel"/>
+      <xs:attribute name="units"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="source">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataProducerFilter">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="source"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sourceChannel"/>
+      <xs:attribute name="units"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataProducer">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTHoltsMethodSmoothing">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="source"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="k0"/>
+      <xs:attribute name="k1"/>
+      <xs:attribute name="sourceChannel"/>
+      <xs:attribute name="units"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTIntegratingProducerFilter">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="source"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="offset"/>
+      <xs:attribute name="sourceChannel"/>
+      <xs:attribute name="units"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearProducerFilter">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="source"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="k0"/>
+      <xs:attribute name="k1"/>
+      <xs:attribute name="sourceChannel"/>
+      <xs:attribute name="units"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMultiWaveGenerator">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="waves"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="waves" type="listContents"/>
+  <xs:element name="OTPropertyDataProducer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="target"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sampleTime"/>
+      <xs:attribute name="timeScale"/>
+      <xs:attribute name="property"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUnitValue">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="unit"/>
+      <xs:attribute name="value"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUnitValueViewConfig">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="precision"/>
+      <xs:attribute name="editable"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTWave">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="wavelength"/>
+      <xs:attribute name="amplitude"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTWaveGenerator">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sampleTime"/>
+      <xs:attribute name="timeScale"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTAddGraphableAction">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataGraph"/>
+        <xs:element ref="graphablesToAdd"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="actionText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataGraph">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="graphablesToAdd" type="listContents"/>
+  <xs:element name="OTAction">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="actionText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DefaultOTObject">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataAxis">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="units"/>
+      <xs:attribute name="min"/>
+      <xs:attribute name="intervalWorld"/>
+      <xs:attribute name="max"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="graphables" type="listContents"/>
+  <xs:element name="OTDataBarGraphable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataProducer"/>
+        <xs:element ref="dataStore"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="maxBarsToSelect"/>
+      <xs:attribute name="locked"/>
+      <xs:attribute name="connectPoints"/>
+      <xs:attribute name="drawMarks"/>
+      <xs:attribute name="controllable"/>
+      <xs:attribute name="drawing"/>
+      <xs:attribute name="allowHide"/>
+      <xs:attribute name="xColumn"/>
+      <xs:attribute name="yColumn"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="lineWidth"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataGraphable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataProducer"/>
+        <xs:element ref="dataStore"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="locked"/>
+      <xs:attribute name="connectPoints"/>
+      <xs:attribute name="drawMarks"/>
+      <xs:attribute name="controllable"/>
+      <xs:attribute name="drawing"/>
+      <xs:attribute name="allowHide"/>
+      <xs:attribute name="xColumn"/>
+      <xs:attribute name="yColumn"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="lineWidth"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataCollector">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+        <xs:element ref="yDataAxis"/>
+        <xs:element ref="xDataAxis"/>
+        <xs:element ref="singleDataStore"/>
+        <xs:element ref="dataSetFolder"/>
+        <xs:element ref="labels"/>
+        <xs:element ref="source"/>
+        <xs:element ref="prototypeGraphables"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="singleValue"/>
+      <xs:attribute name="showTare"/>
+      <xs:attribute name="multipleGraphableEnabled"/>
+      <xs:attribute name="rulerEnabled"/>
+      <xs:attribute name="autoScaleEnabled"/>
+      <xs:attribute name="title"/>
+      <xs:attribute name="showToolbar"/>
+      <xs:attribute name="aspectRatio"/>
+      <xs:attribute name="showGraphableList"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="yDataAxis">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="xDataAxis">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="singleDataStore">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataSetFolder">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="labels" type="listContents"/>
+  <xs:element name="prototypeGraphables" type="listContents"/>
+  <xs:element name="OTDataGraph">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+        <xs:element ref="yDataAxis"/>
+        <xs:element ref="xDataAxis"/>
+        <xs:element ref="labels"/>
+        <xs:element ref="prototypeGraphables"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showToolbar"/>
+      <xs:attribute name="aspectRatio"/>
+      <xs:attribute name="showGraphableList"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataCollectorDataStore">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataCollector"/>
+        <xs:element ref="values"/>
+        <xs:element ref="channelDescriptions"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="dataType"/>
+      <xs:attribute name="numberChannels"/>
+      <xs:attribute name="dt"/>
+      <xs:attribute name="valuesString"/>
+      <xs:attribute name="virtualChannels"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataCollector">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataFlowingLine">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="image1"/>
+        <xs:element ref="image2"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image1">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image2">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataPointLabel">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataGraphable"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="xData"/>
+      <xs:attribute name="yData"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="fontSize"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataGraphable">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataAnnotation">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataGraphable"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="xData"/>
+      <xs:attribute name="yData"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="fontSize"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPointTextLabel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="xData"/>
+      <xs:attribute name="yData"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="fontSize"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataPointRuler">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataGraphable"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="xData"/>
+      <xs:attribute name="yData"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="fontSize"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMultiDataGraph">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphs"/>
+        <xs:element ref="pluginViews"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="columns"/>
+      <xs:attribute name="rows"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="graphs" type="listContents"/>
+  <xs:element name="pluginViews" type="listContents"/>
+  <xs:element name="OTMultiDataSetControl">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showNew"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPluginView">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="control"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="location"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="control">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFlowerInterface">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="numberPetals"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFlowerInterfaceExt">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="numberPetals"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFlowerObject">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="numberPetals"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataFilterScript">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="filterScript"/>
+        <xs:element ref="filterProviderScript"/>
+        <xs:element ref="inputDataStore"/>
+        <xs:element ref="inputDataGraphable"/>
+        <xs:element ref="description"/>
+        <xs:element ref="values"/>
+        <xs:element ref="channelDescriptions"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="numberChannels"/>
+      <xs:attribute name="dt"/>
+      <xs:attribute name="valuesString"/>
+      <xs:attribute name="virtualChannels"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="filterScript">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="filterProviderScript">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inputDataStore">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inputDataGraphable">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataFilter">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="inputDataStore"/>
+        <xs:element ref="inputDataGraphable"/>
+        <xs:element ref="description"/>
+        <xs:element ref="values"/>
+        <xs:element ref="channelDescriptions"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="numberChannels"/>
+      <xs:attribute name="dt"/>
+      <xs:attribute name="valuesString"/>
+      <xs:attribute name="virtualChannels"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFrame">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="positionX"/>
+      <xs:attribute name="positionY"/>
+      <xs:attribute name="borderlessPopup"/>
+      <xs:attribute name="useScrollPane"/>
+      <xs:attribute name="alwaysOnTop"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="title"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTBlob">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDrawingImageIcon">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="stamp"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stamp">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDrawingShape">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="fillType"/>
+      <xs:attribute name="strokeWidth"/>
+      <xs:attribute name="type"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDrawingStamp">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="imageSrc"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="imageURL"/>
+      <xs:attribute name="alwaysOn"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imageSrc">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDrawingTool">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+        <xs:element ref="backgroundSrc"/>
+        <xs:element ref="stamps"/>
+        <xs:element ref="customButtons"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="backgroundImage"/>
+      <xs:attribute name="backgroundImageURL"/>
+      <xs:attribute name="gridVisible"/>
+      <xs:attribute name="preferredWidth"/>
+      <xs:attribute name="preferredHeight"/>
+      <xs:attribute name="lineWidthButtonVisible"/>
+      <xs:attribute name="largeTextButtonVisible"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="backgroundSrc">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stamps" type="listContents"/>
+  <xs:element name="customButtons" type="listContents"/>
+  <xs:element name="OTDrawingTool2">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+        <xs:element ref="backgroundSrc"/>
+        <xs:element ref="stamps"/>
+        <xs:element ref="customButtons"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="backgroundImage"/>
+      <xs:attribute name="backgroundImageURL"/>
+      <xs:attribute name="gridVisible"/>
+      <xs:attribute name="preferredWidth"/>
+      <xs:attribute name="preferredHeight"/>
+      <xs:attribute name="lineWidthButtonVisible"/>
+      <xs:attribute name="largeTextButtonVisible"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTGraphArea">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="originOffsetPercentage"/>
+        <xs:element ref="scale"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="originOffsetPercentage">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scale">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPoint2D">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTGraphFunctionList">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="currentColorIndex"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSelectableList">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearEquation">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="function"/>
+        <xs:element ref="resultValue"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="allowMoveEquationPoint"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="function">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resultValue">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFunctionEquation">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="function"/>
+        <xs:element ref="resultValue"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="allowMoveEquationPoint"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDefaultGraphFunction">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearFunction">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="slope"/>
+      <xs:attribute name="yIntercept"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearFunctionPushpin">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="pushpinX"/>
+      <xs:attribute name="pushpinOn"/>
+      <xs:attribute name="slope"/>
+      <xs:attribute name="yIntercept"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearPiecewise">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="segments">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearSegment">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="closedStart"/>
+      <xs:attribute name="closedEnd"/>
+      <xs:attribute name="domainStart"/>
+      <xs:attribute name="domainEnd"/>
+      <xs:attribute name="slope"/>
+      <xs:attribute name="yIntercept"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTQuadraticFunction">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="coeffA"/>
+      <xs:attribute name="coeffB"/>
+      <xs:attribute name="coeffC"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTValue">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="value"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTGraphFunctionsScreen">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphableList"/>
+        <xs:element ref="valueObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="graphableList">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="valueObject">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSoundDataCollector">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphables"/>
+        <xs:element ref="yDataAxis"/>
+        <xs:element ref="xDataAxis"/>
+        <xs:element ref="singleDataStore"/>
+        <xs:element ref="dataSetFolder"/>
+        <xs:element ref="labels"/>
+        <xs:element ref="source"/>
+        <xs:element ref="prototypeGraphables"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="singleValue"/>
+      <xs:attribute name="showTare"/>
+      <xs:attribute name="multipleGraphableEnabled"/>
+      <xs:attribute name="rulerEnabled"/>
+      <xs:attribute name="autoScaleEnabled"/>
+      <xs:attribute name="title"/>
+      <xs:attribute name="showToolbar"/>
+      <xs:attribute name="aspectRatio"/>
+      <xs:attribute name="showGraphableList"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSoundDataProducer">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sampleRate"/>
+      <xs:attribute name="timeWindow"/>
+      <xs:attribute name="isFFT"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSoundGrapherModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTInclude">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="href"/>
+      <xs:attribute name="otmlId"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTIncludeRootObject">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="href"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTProperty">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTStateRoot">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="userMap"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="formatVersionString"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="userMap" type="mapContents"/>
+  <xs:element name="OTSystem">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="includes"/>
+        <xs:element ref="bundles"/>
+        <xs:element ref="library"/>
+        <xs:element ref="overlays"/>
+        <xs:element ref="firstObject"/>
+        <xs:element ref="firstObjectNoUserData"/>
+        <xs:element ref="root"/>
+        <xs:element ref="services"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="includes" type="listContents"/>
+  <xs:element name="bundles" type="listContents"/>
+  <xs:element name="library" type="listContents"/>
+  <xs:element name="overlays" type="listContents"/>
+  <xs:element name="firstObject">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="firstObjectNoUserData">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="services" type="listContents"/>
+  <xs:element name="OTMozSwing">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showToolbar"/>
+      <xs:attribute name="preferredHeight"/>
+      <xs:attribute name="url"/>
+      <xs:attribute name="showStatusBar"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTButton">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="action"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="action">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDIYActivity">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="sections"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="title"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sections" type="listContents"/>
+  <xs:element name="OTDIYSection">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="viewEntry"/>
+        <xs:element ref="child"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewEntry">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="child">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDIYExternalRef">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataCollectorViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="predefinedGraphs"/>
+        <xs:element ref="sharedGraphs"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="predefinedGraphs">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sharedGraphs" type="listContents"/>
+  <xs:element name="OTLabviewMonitor">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="portNum"/>
+      <xs:attribute name="viPath"/>
+      <xs:attribute name="monitorPath"/>
+      <xs:attribute name="exclusionPath"/>
+      <xs:attribute name="dummyReportPath"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTOverlay">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="deltaObjectMap"/>
+        <xs:element ref="nonDeltaObjects"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deltaObjectMap" type="mapContents"/>
+  <xs:element name="nonDeltaObjects" type="listContents"/>
+  <xs:element name="OTScript">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="script"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTScriptEngineBundle">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="engines"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="engines" type="listContents"/>
+  <xs:element name="OTScriptEngineEntry">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="engineClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTJRuby">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="script"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTJavascript">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="scripts"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="script"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scripts" type="listContents"/>
+  <xs:element name="OTJython">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="script"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTScriptButton">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="scriptVariables"/>
+        <xs:element ref="script"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scriptVariables" type="listContents"/>
+  <xs:element name="script">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTScriptObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="variables" type="listContents"/>
+        <xs:element ref="referenceObjects"/>
+        <xs:element ref="scriptState"/>
+        <xs:element ref="contents"/>
+        <xs:element ref="script"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="referenceObjects" type="listContents"/>
+  <xs:element name="scriptState" type="mapContents"/>
+  <xs:element name="contents" type="listContents"/>
+  <xs:element name="OTScriptVariable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="reference"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reference">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTScriptVariableComponent">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="reference"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTScriptVariableRealObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="reference"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTScriptVariableView">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="reference"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTXHTMLScript">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="variables" type="listContents"/>
+        <xs:element ref="script"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPrototypeScriptController">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="script"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPrototypeController">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTemplateEngineBundle">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="engines"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTemplateEngineEntry">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="engineClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTemplateObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="variables" type="listContents"/>
+        <xs:element name="template">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTemplateVariable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="reference"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTAuthorNote">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="note"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTip">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="tip"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tip">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLLabPage">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="backgroundImage"/>
+        <xs:element ref="cardContainer"/>
+        <xs:element name="map">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="backgroundImage">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cardContainer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLMenuRule">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="rules"/>
+        <xs:element ref="scope"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="remainInScope"/>
+      <xs:attribute name="jumpToAnyCard"/>
+      <xs:attribute name="jumpToViewedCard"/>
+      <xs:attribute name="jumpAhead"/>
+      <xs:attribute name="jumpBack"/>
+      <xs:attribute name="stepAhead"/>
+      <xs:attribute name="stepBack"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rules" type="listContents"/>
+  <xs:element name="scope" type="listContents"/>
+  <xs:element name="OTUDLVersionContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="versions"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="currentVersion"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="versions" type="listContents"/>
+  <xs:element name="OTUDLVersionContainerViewConfig">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="currentVersion"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLVersionedObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="otObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="version"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="otObject">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTZoom">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="transforms"/>
+        <xs:element ref="images"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="totalTransformTime"/>
+      <xs:attribute name="numberTransformSteps"/>
+      <xs:attribute name="onlyZoomIn"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transforms" type="listContents"/>
+  <xs:element name="images" type="listContents"/>
+  <xs:element name="OTZoomTransform">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="image"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="topLeftX"/>
+      <xs:attribute name="topLeftY"/>
+      <xs:attribute name="scale"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLCoach">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="inactiveImageURL"/>
+      <xs:attribute name="activeImageURL"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLCoachGroup">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="characters" type="listContents"/>
+        <xs:element ref="coachStatements"/>
+        <xs:element ref="topLevelCardContainer"/>
+        <xs:element ref="speechFrame"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="coachStatements" type="listContents"/>
+  <xs:element name="topLevelCardContainer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speechFrame">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLCoachStatement">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="coach"/>
+        <xs:element ref="statement"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="timesClicked"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="coach">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="statement">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDefinition">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="definition"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="word"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="definition">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDefinitionList">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDefinitionManager">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="definitions"/>
+        <xs:element ref="compoundDoc"/>
+        <xs:element ref="frame"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="definitions" type="listContents"/>
+  <xs:element name="compoundDoc">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frame">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLComment">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="isCommented"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="isPassword"/>
+      <xs:attribute name="rows"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTText">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="isPassword"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="rows"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLCompoundDoc">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="coachStatements"/>
+        <xs:element ref="bodyText"/>
+        <xs:element ref="documentRefs"/>
+        <xs:element ref="children"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="showEditBar"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bodyText" type="anyXMLFragment"/>
+  <xs:element name="documentRefs" type="listContents"/>
+  <xs:element name="children" type="listContents"/>
+  <xs:element name="OTCompoundDoc">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="bodyText"/>
+        <xs:element ref="documentRefs"/>
+        <xs:element ref="children"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="showEditBar"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDocument">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFolderObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="children"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLDocumentViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="definitionManager"/>
+        <xs:element ref="cssBlocks"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="css"/>
+      <xs:attribute name="mode"/>
+      <xs:attribute name="viewContainerIsUpdateable"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="definitionManager">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cssBlocks" type="listContents"/>
+  <xs:element name="OTDocumentViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="cssBlocks"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="css"/>
+      <xs:attribute name="mode"/>
+      <xs:attribute name="viewContainerIsUpdateable"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFrictionModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showGraph"/>
+      <xs:attribute name="showMoveRampButtons"/>
+      <xs:attribute name="rampAngle"/>
+      <xs:attribute name="showPushButtons"/>
+      <xs:attribute name="showSlider"/>
+      <xs:attribute name="showMaterialButtons"/>
+      <xs:attribute name="isSlideSimulation"/>
+      <xs:attribute name="isEnergySimulation"/>
+      <xs:attribute name="startMaterial"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLLeveledQuestions">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="questions"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="timesClicked"/>
+      <xs:attribute name="currentIndex"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="questions" type="listContents"/>
+  <xs:element name="OTUDLQuestion">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="scaffolding"/>
+        <xs:element ref="input"/>
+        <xs:element ref="prompt"/>
+        <xs:element name="correctAnswer">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showScaffolding"/>
+      <xs:attribute name="showConvertButton"/>
+      <xs:attribute name="reasoning"/>
+      <xs:attribute name="showCheckAnswersButton"/>
+      <xs:attribute name="showImmediateFeedback"/>
+      <xs:attribute name="correctAnswerFeedback"/>
+      <xs:attribute name="incorrectAnswerFeedback"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scaffolding">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="input">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prompt">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTQuestion">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="input"/>
+        <xs:element ref="prompt"/>
+        <xs:element name="correctAnswer">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="reasoning"/>
+      <xs:attribute name="showCheckAnswersButton"/>
+      <xs:attribute name="showImmediateFeedback"/>
+      <xs:attribute name="correctAnswerFeedback"/>
+      <xs:attribute name="incorrectAnswerFeedback"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLQuestionViewConfig">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="defaultScaffoldLevel"/>
+      <xs:attribute name="isLevelFrozen"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLReport">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="sectionContainer"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sectionContainer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="characters">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="topBar"/>
+        <xs:element ref="cssColor"/>
+        <xs:element ref="allowedModes"/>
+        <xs:element ref="content"/>
+        <xs:element ref="title"/>
+        <xs:element ref="menu"/>
+        <xs:element ref="script"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="topBar">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cssColor">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="allowedModes" type="listContents"/>
+  <xs:element name="content">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="menu">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLMenu">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="cardContainer"/>
+        <xs:element ref="css"/>
+        <xs:element ref="menuRule"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showBorder"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="css">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="menuRule">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUDLSection">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="header"/>
+        <xs:element ref="footer"/>
+        <xs:element ref="questionView"/>
+        <xs:element ref="content"/>
+        <xs:element ref="south"/>
+        <xs:element ref="north"/>
+        <xs:element ref="east"/>
+        <xs:element ref="west"/>
+        <xs:element ref="center"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="viewContainerIsUpdateable"/>
+      <xs:attribute name="isPretest"/>
+      <xs:attribute name="isPosttest"/>
+      <xs:attribute name="isIntroduction"/>
+      <xs:attribute name="isWrapup"/>
+      <xs:attribute name="isComputerBased"/>
+      <xs:attribute name="isReading"/>
+      <xs:attribute name="isMath"/>
+      <xs:attribute name="isProbes"/>
+      <xs:attribute name="isModel"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="questionView">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="south">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="north">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="east">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="west">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="center">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTBorderContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="south"/>
+        <xs:element ref="north"/>
+        <xs:element ref="east"/>
+        <xs:element ref="west"/>
+        <xs:element ref="center"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTCardContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="cards"/>
+        <xs:element ref="currentCard"/>
+        <xs:element ref="viewedCards"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="contentsMayScroll"/>
+      <xs:attribute name="loadViewOnlyOnDemand"/>
+      <xs:attribute name="closeViewOnExit"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cards" type="listContents"/>
+  <xs:element name="currentCard">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewedCards" type="listContents"/>
+  <xs:element name="OTChoice">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="choices"/>
+        <xs:element name="currentChoice">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="currentChoices"/>
+        <xs:element ref="correctChoice"/>
+        <xs:element ref="correctChoices"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="alignContent"/>
+      <xs:attribute name="selectionUI"/>
+      <xs:attribute name="horizontal"/>
+      <xs:attribute name="immediateFeedback"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="choices" type="listContents"/>
+  <xs:element name="currentChoices" type="listContents"/>
+  <xs:element name="correctChoice">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="correctChoices" type="listContents"/>
+  <xs:element name="OTChoiceMultiple">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="choices"/>
+        <xs:element name="currentChoice">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="currentChoices"/>
+        <xs:element ref="correctChoice"/>
+        <xs:element ref="correctChoices"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="alignContent"/>
+      <xs:attribute name="selectionUI"/>
+      <xs:attribute name="horizontal"/>
+      <xs:attribute name="immediateFeedback"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTChoiceWithFeedback">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="choices"/>
+        <xs:element name="currentChoice">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="currentChoices"/>
+        <xs:element ref="correctChoice"/>
+        <xs:element ref="correctChoices"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="alignContent"/>
+      <xs:attribute name="selectionUI"/>
+      <xs:attribute name="horizontal"/>
+      <xs:attribute name="immediateFeedback"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTImage">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="imageURL"/>
+      <xs:attribute name="imageBytes"/>
+      <xs:attribute name="scalePercent"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTImageMap">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="contents"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="x1"/>
+      <xs:attribute name="y1"/>
+      <xs:attribute name="x2"/>
+      <xs:attribute name="y2"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTImageViewConfig">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="preferredWidth"/>
+      <xs:attribute name="preferredHeight"/>
+      <xs:attribute name="zoomEnabled"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTListBox">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="items"/>
+        <xs:element ref="selectedItems"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="items" type="listContents"/>
+  <xs:element name="selectedItems" type="listContents"/>
+  <xs:element name="OTModeSwitcher">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="otObject"/>
+        <xs:element ref="allowedModes"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPlacement">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="components"/>
+        <xs:element ref="component"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="x"/>
+      <xs:attribute name="y"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="layer"/>
+      <xs:attribute name="position"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="components" type="listContents"/>
+  <xs:element name="component">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPlacementContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="placements"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="backgroundColor"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="placements" type="listContents"/>
+  <xs:element name="OTScrollContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="content"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSlider">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="labels"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="vertical"/>
+      <xs:attribute name="numTicks"/>
+      <xs:attribute name="showTickMarks"/>
+      <xs:attribute name="snapToMarks"/>
+      <xs:attribute name="value"/>
+      <xs:attribute name="maximum"/>
+      <xs:attribute name="minimum"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSliderLabel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="value"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSoundPlayer">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="timesClicked"/>
+      <xs:attribute name="streamSound"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSplitPane">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="second"/>
+        <xs:element ref="first"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="orientation"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="second">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="first">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTextPane">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="text"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="editable"/>
+      <xs:attribute name="contentType"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text" type="anyXMLFragment"/>
+  <xs:element name="OTNotebook">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="currentMeasurement"/>
+        <xs:element ref="entries"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currentMeasurement">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="entries" type="listContents"/>
+  <xs:element name="OTNotebookMeasurement">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="unitValue"/>
+        <xs:element ref="notes"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="creationTime"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="unitValue">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="notes">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTNotebookTester">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="notebook"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSnapshot">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="oTObject"/>
+        <xs:element ref="drawingTool"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="notes"/>
+      <xs:attribute name="creationTime"/>
+      <xs:attribute name="targetName"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="oTObject">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="drawingTool">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSnapshotAlbum">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="entries"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="title"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSnapshotButton">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="snapshotAlbum"/>
+        <xs:element ref="target"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="targetName"/>
+      <xs:attribute name="componentIndices"/>
+      <xs:attribute name="returnDefaultComponent"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="snapshotAlbum">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSnapshotChooser">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="album"/>
+        <xs:element ref="embeddedSnapshots"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="allowMultipleSelections"/>
+      <xs:attribute name="showNotes"/>
+      <xs:attribute name="showDrawTool"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="embeddedSnapshots" type="listContents"/>
+  <xs:element name="OTChoiceViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="radioButtonViewEntry"/>
+        <xs:element ref="checkBoxViewEntry"/>
+        <xs:element ref="comboBoxViewEntry"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="useViewsAsChoices"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="radioButtonViewEntry">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkBoxViewEntry">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="comboBoxViewEntry">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTree">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="selectedObject"/>
+        <xs:element ref="objectsToInsert"/>
+        <xs:element ref="root"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="selectedPath"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="selectedObject">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="objectsToInsert" type="listContents"/>
+  <xs:element name="OTReferenceMap">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="user"/>
+        <xs:element name="map" type="mapContents"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUserObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="userDataMap"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="userDataMap" type="mapContents"/>
+  <xs:element name="OTMainClassLauncher">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="mainClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSharingBundle">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="sharedObjects"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sharedObjects" type="listContents"/>
+  <xs:element name="OTVelocityTemplate">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="template" type="anyXMLFragment"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTemplate">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="template" type="anyXMLFragment"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTVelocityXHTMLViewEntry">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="template" type="anyXMLFragment"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTAuthorEmbedDefaultViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="frame"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="popupViewMode"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTChooserViewEntry">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="finalViewMode"/>
+      <xs:attribute name="propertyName"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTFrameDisplayAction">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="objectToDisplay"/>
+        <xs:element ref="frame"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="viewMode"/>
+      <xs:attribute name="xPosition"/>
+      <xs:attribute name="yPosition"/>
+      <xs:attribute name="actionText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="objectToDisplay">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMultiUserRoot">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="userList"/>
+        <xs:element ref="reportTemplate"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="userList">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reportTemplate">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTObjectEditViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="objectsToInsert"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="mode"/>
+      <xs:attribute name="viewContainerIsUpdateable"/>
+      <xs:attribute name="usePopupEditWindows"/>
+      <xs:attribute name="copyNewObjectsByDefault"/>
+      <xs:attribute name="addParagraphAfterObject"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTViewBundle">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="viewEntries"/>
+        <xs:element ref="views"/>
+        <xs:element ref="modes"/>
+        <xs:element ref="frame"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="currentMode"/>
+      <xs:attribute name="showLeftPanel"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewEntries" type="listContents"/>
+  <xs:element name="views" type="listContents"/>
+  <xs:element name="modes" type="listContents"/>
+  <xs:element name="OTViewChild">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="viewid"/>
+        <xs:element name="object">
+          <xs:complexType>
+            <xs:group ref="otObject"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="useScrollPane"/>
+      <xs:attribute name="scrollPanelHasBorder"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewid">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTViewMode">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="default"/>
+        <xs:element name="map" type="mapContents"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="default">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTViewService">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="viewEntries"/>
+        <xs:element ref="views"/>
+        <xs:element ref="modes"/>
+        <xs:element ref="frame"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="currentMode"/>
+      <xs:attribute name="showLeftPanel"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTCssText">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="src"/>
+      <xs:attribute name="cssText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTTextObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="children"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="bodyText"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDocumentEditViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="cssBlocks"/>
+        <xs:element ref="objectsToInsert"/>
+        <xs:element ref="documentViewConfig"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="css"/>
+      <xs:attribute name="mode"/>
+      <xs:attribute name="viewContainerIsUpdateable"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="documentViewConfig">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPropertyReference">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="reference"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="property"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPrototypeEventController">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="mapping"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mapping" type="listContents"/>
+  <xs:element name="OTPrototypeMapEntry">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="modelProperty"/>
+      <xs:attribute name="prototypeProperty"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPrototypeViewEntry">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="viewEntry"/>
+        <xs:element ref="prototype"/>
+        <xs:element ref="controller"/>
+        <xs:element ref="prototypeCopies"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="viewMode"/>
+      <xs:attribute name="copyPrototype"/>
+      <xs:attribute name="savePrototypeCopies"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prototype">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="controller">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prototypeCopies" type="mapContents"/>
+  <xs:element name="OTCAPAReportTemplate">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="rubric"/>
+        <xs:element ref="activityScript"/>
+        <xs:element ref="reportScript"/>
+        <xs:element ref="users"/>
+        <xs:element ref="contentsMap"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rubric">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="activityScript">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reportScript">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="users" type="listContents"/>
+  <xs:element name="contentsMap" type="mapContents"/>
+  <xs:element name="OTMultimeterAnswerAssessment">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="answerValue"/>
+        <xs:element ref="correctValue"/>
+        <xs:element ref="indicatorValues"/>
+        <xs:element ref="inventory"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="answerType"/>
+      <xs:attribute name="notes"/>
+      <xs:attribute name="activityName"/>
+      <xs:attribute name="time"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="userName"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="answerValue">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="correctValue">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indicatorValues" type="mapContents"/>
+  <xs:element name="inventory" type="mapContents"/>
+  <xs:element name="OTAssessment">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="indicatorValues"/>
+        <xs:element ref="inventory"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="notes"/>
+      <xs:attribute name="activityName"/>
+      <xs:attribute name="time"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="userName"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMultimeterAssessment">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="answers"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="activityName"/>
+      <xs:attribute name="time"/>
+      <xs:attribute name="userName"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="answers" type="listContents"/>
+  <xs:element name="OTMultimeterRubric">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="voltageRubric"/>
+        <xs:element ref="currentRubric"/>
+        <xs:element ref="resistanceRubric"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="voltageRubric">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="currentRubric">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resistanceRubric">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTUnit">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="abbreviation"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTAssessmentViewConfig">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="rubric"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showQualitative"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTRubric">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="indicators"/>
+        <xs:element ref="defaultIndicatorValues"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indicators" type="listContents"/>
+  <xs:element name="defaultIndicatorValues" type="listContents"/>
+  <xs:element name="OTRubricIndicator">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="possibleValues"/>
+        <xs:element ref="possibleRanges"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showValue"/>
+      <xs:attribute name="enabled"/>
+      <xs:attribute name="name"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="description"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="possibleValues" type="listContents"/>
+  <xs:element name="possibleRanges" type="listContents"/>
+  <xs:element name="OTRubricIndicatorRange">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="minValue"/>
+      <xs:attribute name="maxValue"/>
+      <xs:attribute name="category"/>
+      <xs:attribute name="points"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTRubricIndicatorGrade">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="category"/>
+      <xs:attribute name="points"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTRubricIndicatorValue">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="value"/>
+      <xs:attribute name="category"/>
+      <xs:attribute name="points"/>
+      <xs:attribute name="label"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTCCKModel">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="savedCircuit"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="loadSavedCircuitAtStartup"/>
+      <xs:attribute name="useDCandAC"/>
+      <xs:attribute name="showElectrons"/>
+      <xs:attribute name="showMultimeter"/>
+      <xs:attribute name="grabBagEnabled"/>
+      <xs:attribute name="toolboxVisible"/>
+      <xs:attribute name="lifelike"/>
+      <xs:attribute name="showMenus"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="savedCircuit" type="anyXMLFragment"/>
+  <xs:element name="OTModelerModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="showDefaultToolbar"/>
+      <xs:attribute name="showCompleteToolbar"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTModelerPage">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="questions"/>
+        <xs:element ref="dataInput"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="authoredBytes"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="height"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataInput">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTModelerPageViewConfig">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectClass"/>
+      <xs:attribute name="viewClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMwAction">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="targets"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+      <xs:attribute name="actionText"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="targets" type="listContents"/>
+  <xs:element name="OTMwChannelData">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="channel"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMwDataProducer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="data"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="model">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data" type="listContents"/>
+  <xs:element name="OTMultipleDataProducer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="data"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMwModelData">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="property"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTMwObjectData">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="property"/>
+      <xs:attribute name="type"/>
+      <xs:attribute name="index"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPhetBalloonsModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectWidth"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPhetDischargeLampsModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="objectWidth"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPhetFaradayModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="objectWidth"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPhetSkateParkModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="objectWidth"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPhetSoundModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="objectWidth"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTPhetWaveModel">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="objectWidth"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RunActivityProperties">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="stateMap"/>
+        <xs:element ref="globalsMap"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="authoredDataURL"/>
+      <xs:attribute name="activityPath"/>
+      <xs:attribute name="errorSilent"/>
+      <xs:attribute name="dynamicLoading"/>
+      <xs:attribute name="codebase"/>
+      <xs:attribute name="jarPaths"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stateMap" type="mapContents"/>
+  <xs:element name="globalsMap" type="mapContents"/>
+  <xs:element name="PfChoice">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="choices"/>
+        <xs:element name="currentChoice" type="listContents"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="displayType"/>
+      <xs:attribute name="multipleSelect"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PfCompoundDoc">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="bodyText"/>
+        <xs:element ref="documentRefs"/>
+        <xs:element ref="children"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="showEditBar"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PfDocument">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PfImage">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="imageURL"/>
+      <xs:attribute name="imageBytes"/>
+      <xs:attribute name="scalePercent"/>
+      <xs:attribute name="width"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PfQuery">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="responses"/>
+        <xs:element ref="text"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="responses" type="listContents"/>
+  <xs:element name="PfResponse">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="input"/>
+        <xs:element name="correctAnswer" type="listContents"/>
+        <xs:element ref="text"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="queryID"/>
+      <xs:attribute name="correctAnswerText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PfResponseTable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="cells"/>
+        <xs:element ref="text"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="correctAnswerText"/>
+      <xs:attribute name="cols"/>
+      <xs:attribute name="rows"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cells" type="listContents"/>
+  <xs:element name="PfTechnicalHint">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="vendorChoice"/>
+        <xs:element ref="hintMap"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="title"/>
+      <xs:attribute name="name"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="markupLanguage"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vendorChoice">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hintMap" type="mapContents"/>
+  <xs:element name="PfTextObject">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="children"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="bodyText"/>
+      <xs:attribute name="input"/>
+      <xs:attribute name="documentText"/>
+      <xs:attribute name="markupLanguage"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTReactionTimer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dataConsumer"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="minWait"/>
+      <xs:attribute name="maxWait"/>
+      <xs:attribute name="numberTrials"/>
+      <xs:attribute name="type"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataConsumer">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTRTTInteractiveContainer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="interactive"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="interactive">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearFunctionAnalyzer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphableList"/>
+        <xs:element ref="valueObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTRTTInteractiveGrapher">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphableList"/>
+        <xs:element ref="valueObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTRTTInteractive">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearTransformer">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphableList"/>
+        <xs:element ref="valueObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showGhosts"/>
+      <xs:attribute name="imageModelIndex"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLinearPiecewiseGrapher">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphArea"/>
+        <xs:element ref="grid"/>
+        <xs:element ref="graphableList"/>
+        <xs:element ref="valueObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="imageModelIndex"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="graphArea">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="grid">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTQGrapher">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="valueObject"/>
+        <xs:element ref="qualitativeGraphable"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="imageModelIndex"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="qualitativeGraphable">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTQualGraphable">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element name="segments" type="listContents"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="startXPosition"/>
+      <xs:attribute name="startYPosition"/>
+      <xs:attribute name="selectable"/>
+      <xs:attribute name="visible"/>
+      <xs:attribute name="selected"/>
+      <xs:attribute name="expressionForm"/>
+      <xs:attribute name="functionName"/>
+      <xs:attribute name="functionOrdinal"/>
+      <xs:attribute name="color"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTQualSegment">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="endXPosition"/>
+      <xs:attribute name="endYPosition"/>
+      <xs:attribute name="type"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTQuadraticGrapher">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="graphArea"/>
+        <xs:element ref="grid"/>
+        <xs:element ref="graphableList"/>
+        <xs:element ref="valueObject"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="showTraceVertex"/>
+      <xs:attribute name="objectHeight"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDeviceConfig">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="deviceId"/>
+      <xs:attribute name="configString"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTExperimentRequest">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="sensorRequests"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="period"/>
+      <xs:attribute name="recordingTime"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sensorRequests" type="listContents"/>
+  <xs:element name="OTInterfaceManager">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="deviceConfigs"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deviceConfigs" type="listContents"/>
+  <xs:element name="OTLoggingRequest">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="sensorRequests"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="startCondition"/>
+      <xs:attribute name="triggerPosition"/>
+      <xs:attribute name="preTriggerSamples"/>
+      <xs:attribute name="triggerChannel"/>
+      <xs:attribute name="triggerValue"/>
+      <xs:attribute name="startTime"/>
+      <xs:attribute name="period"/>
+      <xs:attribute name="recordingTime"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSensorDataProxy">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="request"/>
+        <xs:element ref="zeroSensor"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sharable"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="request">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zeroSensor">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTSensorRequest">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="paramMap"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="unit"/>
+      <xs:attribute name="stepSize"/>
+      <xs:attribute name="requiredMax"/>
+      <xs:attribute name="requiredMin"/>
+      <xs:attribute name="displayPrecision"/>
+      <xs:attribute name="type"/>
+      <xs:attribute name="port"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paramMap" type="mapContents"/>
+  <xs:element name="OTSetupLogger">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="request"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="actionText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTZeroSensor">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="sensorIndex"/>
+      <xs:attribute name="actionText"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLoggerImporter">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="request"/>
+        <xs:element ref="chooser"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chooser">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTLoggerRecordChooser">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OTDataFilterDescription">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="properties"/>
+      </xs:sequence>
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="operation"/>
+      <xs:attribute name="channelX"/>
+      <xs:attribute name="channelY"/>
+      <xs:attribute name="filterClass"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="properties" type="listContents"/>
+  <xs:element name="OTGrid">
+    <xs:complexType mixed="true">
+      <xs:attribute name="local_id"/>
+      <xs:attribute name="xInterval"/>
+      <xs:attribute name="yInterval"/>
+      <xs:attribute name="xLabel"/>
+      <xs:attribute name="yLabel"/>
+      <xs:attribute name="name"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

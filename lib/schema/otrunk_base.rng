@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:xsp="http://apache.org/xsp/core/v1"
+  xmlns:s="http://www.ascc.net/xml/schematron"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:f="http://axkit.org/NS/xsp/perform/v1"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+      <element name="otrunk">
+        <optional>
+	        <attribute name="id"><text/></attribute>
+	    </optional>
+        <element name="imports">
+          <zeroOrMore>
+            <element name="import">
+              <attribute name="class">
+                <text />
+              </attribute>
+            </element>
+          </zeroOrMore>
+        </element>
+        <element name="objects">
+        	<ref name="otObject"/>
+        </element>
+      </element>
+  </start>
+  
+  <define name="otObject">
+    <element name="object">
+       <attribute name="refid">
+       	 <text/>
+       </attribute>
+    </element>
+  </define>
+ 
+  <define name="typedObject">
+      <choice>
+        <element name="string"><ref name="anyXMLFragment"/></element>
+        <ref name="otObject"/>
+      </choice>            
+  </define>
+ 
+  <define name="listContents">
+    <zeroOrMore>
+      <ref name="typedObject"/>
+    </zeroOrMore>
+  </define>
+ 
+  <define name="mapContents">
+  	<zeroOrMore>
+  	  <element name="entry">
+  	    <attribute name="key">
+  	      <text/>
+  	    </attribute>
+        <ref name="typedObject"/>
+  	  </element>
+  	</zeroOrMore>
+  </define>
+  
+  <define name="anyElement">
+    <element>
+      <anyName/>
+      <zeroOrMore>
+        <choice>
+          <attribute>
+            <anyName/>
+          </attribute>
+          <text/>
+          <ref name="anyElement"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+  
+  <define name="anyXMLFragment">
+    <zeroOrMore>
+      <choice>
+        <text/>
+        <ref name="anyElement"/>  
+      </choice> 
+    </zeroOrMore>
+  </define>
+</grammar>

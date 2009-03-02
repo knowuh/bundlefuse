@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bundle_id: 1
+  parent_id: 1
+
+two:
+  bundle_id: 1
+  parent_id: 1

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="otrunk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="imports"/>
+        <xs:element ref="objects"/>
+      </xs:sequence>
+      <xs:attribute name="id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="import"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="import">
+    <xs:complexType>
+      <xs:attribute name="class" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="objects">
+    <xs:complexType>
+      <xs:group ref="otObject"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="typedObject">
+    <xs:choice>
+      <xs:element ref="string"/>
+      <xs:group ref="otObject"/>
+    </xs:choice>
+  </xs:group>
+  <xs:element name="string" type="anyXMLFragment"/>
+  <xs:complexType name="listContents">
+    <xs:group minOccurs="0" maxOccurs="unbounded" ref="typedObject"/>
+  </xs:complexType>
+  <xs:complexType name="mapContents">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" ref="entry"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="entry">
+    <xs:complexType>
+      <xs:group ref="typedObject"/>
+      <xs:attribute name="key" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="anyElement">
+    <xs:sequence>
+      <xs:any processContents="skip"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:complexType name="anyXMLFragment" mixed="true">
+    <xs:group minOccurs="0" maxOccurs="unbounded" ref="anyElement"/>
+  </xs:complexType>
+</xs:schema>
