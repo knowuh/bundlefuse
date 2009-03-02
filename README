@@ -1,12 +1,22 @@
+== BundleFuse:
 
-Todo:
- o restful api for timeline event data & timeline fragments
- o restful api for diffs
- o restful api for node-graphs
- 
-Node caching:
- o because nodes graph structures in the SDS, it will be challenging to keep them fresh
- the node-graphs for a given workgroup (when needed?).
+Goals:
+* Recover learner data by merging all termoinal-nodes from learner data trees.
+* Instant-previewing of OTML learner data by launching the correct JNLP with the merged bundles.
+* Saving the merged (recovered) learner data back to the sail data service.
+* Provide visualization pages to help understand the learners experience.
+* Provide aggregated statistics about offerings. 
+
+Bonus Todo Items:
+* Restful api for timeline XML fragments
+* Restful api for SVG graphs from dot files
+* Restful api for merging to xml documents
+
+
+Method:
+* Nodes map remote resources (bundles and groups) into a local tree. The local describes only the relation of the bundles by caching meta-data about the bundles.
+* All content is retrieved from an authoritative data service
+
 
 == Welcome to Rails
 
