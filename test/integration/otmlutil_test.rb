@@ -5,7 +5,7 @@ require 'open-uri'
 
 class OTMLUtilTest < Test::Unit::TestCase
 
-wdir = File.dirname(__FILE__)
+
 
   context "the xml_merge in OTML Utils library" do 
       setup do
@@ -59,10 +59,23 @@ DONE
       end
   end
   
-  context "using actual OTML files" do
+  context "parsing actual OTML files" do
     setup do
-      @OTML_a = File.join(@wdir, "../fixtures/76604.xml")
-      @OTML_b = File.join(@wdir, "../fixtures/79332.xml")
+      wdir = File.dirname(__FILE__)
+      otml_a = File.join(wdir, "../fixtures/76604.otml")
+      otml_b = File.join(wdir, "../fixtures/79332.otml")
+      results = OTMLUtil.new().merge_xml(otml_a,otml_b)
+      @doc = Nokogiri::XML(results)
+    end
+    
+    should "keep only one 'current_choice' for each choice" do
+      choices = @doc.xpath("OTChoice/currentChoice")
+      choices.each do | choice |
+        puts choice
+        puts choice.children
+        puts choice.children.size
+        assert_equal 1,choice.children.size
+      end
     end
     
   end

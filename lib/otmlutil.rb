@@ -10,6 +10,7 @@ class OTMLUtil
   attr_accessor :ot_schema_file
   
   def initialize(_xslt_file=nil,_otrunk_schema=nil)
+    XML::XSLT.registerErrorHandler { |string| puts string }
     _xslt_file ||= @@DEFAULT_XSLT_FILE
     _otrunk_schema  ||= @@DEFAULT_OT_SCHEMA_FILE
     @xslt_file = _xslt_file
