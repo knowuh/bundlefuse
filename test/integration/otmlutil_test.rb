@@ -6,10 +6,6 @@ require 'open-uri'
 class OTMLUtilTest < Test::Unit::TestCase
 
 wdir = File.dirname(__FILE__)
-#a = File.join(wdir, "a.xml")
-#b = File.join(wdir, "b.xml")
-# require File.join(File.dirname(__FILE__), 'boot')
-#print XmlMerge.new().merge(a,b);
 
   context "the xml_merge in OTML Utils library" do 
       setup do
@@ -23,8 +19,8 @@ wdir = File.dirname(__FILE__)
           <two>second</two>
           <three>third</three>
           <six>six</six>
-          <seven> ooood </seven>
-          <eight>7</eight>
+          <seven>six plus </seven>
+          <eight>7 + </eight>
         </container_a>
 DONE
         @text_xml_b = <<DONE
@@ -34,11 +30,11 @@ DONE
           <four>four</four>
           <five>five</five>
           <six></six>
-          <seven>seven</seven>
+          <seven>one</seven>
           <eight>1</eight>
         </container_a>
 DONE
-
+  
       end
       
       should "work for text input" do

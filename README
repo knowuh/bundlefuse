@@ -1,5 +1,6 @@
 == BundleFuse:
 
+
 Goals:
 * Recover learner data by merging all termoinal-nodes from learner data trees.
 * Instant-previewing of OTML learner data by launching the correct JNLP with the merged bundles.
@@ -16,6 +17,10 @@ Bonus Todo Items:
 Method:
 * Nodes map remote resources (bundles and groups) into a local tree. The local describes only the relation of the bundles by caching meta-data about the bundles.
 * All content is retrieved from an authoritative data service
+
+Prereqs:
+* thoughtbot-shoulda  (can get from github) simpler(?) alternative to rspec.
+
 
 
 == Welcome to Rails

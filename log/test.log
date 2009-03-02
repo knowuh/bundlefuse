@@ -2445,3 +2445,344 @@ WARNING: Can't mass-assign these protected attributes: bundle_id
   [4;35;1mNode Exists (0.3ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
   [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
   [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-02-27 23:03:29', 2, '2009-02-27 23:03:29', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 4, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 4, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 4, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 4, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 2, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 2, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.3ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 2, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 2, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 2, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 15:21:50', 2, '2009-03-02 15:21:50', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 4, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 4, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 4, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 4, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 2, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 2, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 2, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 2, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 2, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.3ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:13:09', 2, '2009-03-02 16:13:09', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 4, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 4, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 4, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 4, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 2, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 2, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 2, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 2, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 2, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:16:44', 2, '2009-03-02 16:16:44', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 18136850) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 18136850) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 18136850, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 18102830) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 18102830) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 18102830, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 18085820) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 18085820) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 18085820, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 4, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 4, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 4, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 4, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 2, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 2, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 2, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 2, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 2, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:19:15', 2, '2009-03-02 16:19:15', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 18089680) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 18089680) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 18089680, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 18031820) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 18031820) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 18031820, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 17974030) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 17974030) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 17974030, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 4, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 4, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 4, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 4, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 2, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 2, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 2, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 2, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 2, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:23:04', 2, '2009-03-02 16:23:04', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 4, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 5, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 6, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332880) ORDER BY bundle_id[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 4, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 5, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 6, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332879) [0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 4, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 5, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 6, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332880) ORDER BY bundle_id[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 4, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 5, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 6, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332880) ORDER BY bundle_id[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id LIMIT 1[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:36:07', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "nodes" WHERE ("nodes".parent_id = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;35;1mNode Exists (0.3ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 2, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:36:07', 3, '2009-03-02 16:36:07', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.4ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:41', 2, '2009-03-02 16:37:41', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 4, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 5, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 6, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;36;1mNode Load (0.3ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332880) ORDER BY bundle_id[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.2ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 4, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 5, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 6, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332879) [0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 4, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 5, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 6, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332880) ORDER BY bundle_id[0m
+  [4;35;1mNode Exists (0.2ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 4) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 4, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 5) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 5, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 6) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 6, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Update (0.1ms)[0m   [0mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332879 WHERE "id" = 996332880[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332880) ORDER BY bundle_id[0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 3, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.2ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 3, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Load (0.2ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id LIMIT 1[0m
+  [4;35;1mNode Load (0.2ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes"."id" = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 3, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Update (0.1ms)[0m   [0;1mUPDATE "nodes" SET "updated_at" = '2009-03-02 16:37:42', "parent_id" = 996332878 WHERE "id" = 996332879[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "nodes" WHERE ("nodes".parent_id = 996332878) [0m
+  [4;36;1mNode Exists (0.2ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 3, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;35;1mNode Exists (0.3ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;35;1mNode Create (0.3ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Exists (0.1ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;35;1mNode Create (0.1ms)[0m   [0mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 3, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;36;1mNode Load (0.1ms)[0m   [0;1mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332878) ORDER BY bundle_id[0m
+  [4;35;1mNode Load (0.1ms)[0m   [0mSELECT * FROM "nodes" WHERE ("nodes".parent_id = 996332879) ORDER BY bundle_id[0m
+  [4;36;1mNode Exists (0.3ms)[0m   [0;1mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 1) LIMIT 1[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 2) LIMIT 1[0m
+  [4;36;1mNode Create (0.3ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 2, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mNode Exists (0.1ms)[0m   [0mSELECT "nodes".id FROM "nodes" WHERE ("nodes"."bundle_id" = 3) LIMIT 1[0m
+  [4;36;1mNode Create (0.1ms)[0m   [0;1mINSERT INTO "nodes" ("created_at", "bundle_id", "updated_at", "uuid", "group_id", "end", "start", "parent_id") VALUES('2009-03-02 16:37:42', 3, '2009-03-02 16:37:42', NULL, NULL, NULL, NULL, NULL)[0m
