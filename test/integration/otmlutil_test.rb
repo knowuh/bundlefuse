@@ -13,6 +13,7 @@ wdir = File.dirname(__FILE__)
         @wdir = File.dirname(__FILE__)
         @xml_file_a = File.join(@wdir, "a.xml")
         @xml_file_b = File.join(@wdir, "b.xml")
+
         @text_xml_a = <<DONE
         <container_a>
           <one>first</one>
@@ -53,10 +54,18 @@ DONE
         assert_equal 8,doc.xpath("/container_a/*").size
         assert_equal "five",doc.xpath("container_a/five").text
         assert_equal "six",doc.xpath("container_a/six").text
-        puts "element seven (mystery) is: #{doc.xpath("container_a/seven")}"
-        puts "element eight (mystery) is: #{doc.xpath("container_a/eight")}"
+        assert_equal "six plus one", doc.xpath("container_a/seven").text
+        assert_equal "7 + 1", doc.xpath("container_a/eight").text
       end
   end
   
+  context "using actual OTML files" do
+    setup do
+      @OTML_a = File.join(@wdir, "../fixtures/76604.xml")
+      @OTML_b = File.join(@wdir, "../fixtures/79332.xml")
+    end
+    
+  end
+    
   
 end
