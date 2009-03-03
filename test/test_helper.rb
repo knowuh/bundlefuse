@@ -2,6 +2,35 @@ ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
 require 'active_resource/http_mock'
+def mock_up(site)
+   eval <<-EIEIO
+     class ActiveResource::Connection
+       private
+         silence_warnings do
+           def http
+             @http ||= ActiveResource::HttpMock.new(@site)
+           end
+         end
+     end
+   EIEIO
+end
+
+def de_mock
+  eval <<-EIEIO
+    class ActiveResource::Connection
+      private
+        silence_warnings do
+            def http
+              http             = Net::HTTP.new(@site.host, @site.port)
+              http.use_ssl     = @site.is_a?(URI::HTTPS)
+              http.verify_mode = OpenSSL::SSL::VERIFY_NONE if http.use_ssl
+              http
+            end
+        end
+    end
+  EIEIO
+end
+
 
 class Test::Unit::TestCase
   # Transactional fixtures accelerate your tests by wrapping each test method

@@ -1,10 +1,10 @@
 require 'test_helper'
 
-
 class BundleTest < Test::Unit::TestCase
   
-  secontext "with mocked bundles" do
+  context "with mocked bundles" do
     setup do
+       mock_up('localhost')
         bundles = []
         ActiveResource::HttpMock.respond_to do |mock|
           1.upto(10) do | number |
@@ -21,7 +21,9 @@ class BundleTest < Test::Unit::TestCase
         @bundle_b = Bundle.find(2)
         @bundle_c = Bundle.find(3)
     end
-  
+    teardown do
+      de_mock
+    end
     context "Unfetched Bundles" do    
         should "have a good collection path" do
           assert_equal '/13/bundles.xml', Bundle.collection_path

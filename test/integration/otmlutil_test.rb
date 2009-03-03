@@ -4,9 +4,7 @@ require 'nokogiri'
 require 'open-uri'
 
 class OTMLUtilTest < Test::Unit::TestCase
-
-
-
+  
   context "the xml_merge in OTML Utils library" do 
       setup do
         @otmlUtil = OTMLUtil.new()

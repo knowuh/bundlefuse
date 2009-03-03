@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class NodeTest < Test::Unit::TestCase
-
+  require 'active_resource/http_mock'
   context "new Node" do 
       setup do
         @node = Node.create(:bundle_id => 1)
@@ -19,6 +19,7 @@ class NodeTest < Test::Unit::TestCase
   context "with mocked bundles" do
     setup do
         bundles = []
+        mock_up('localhost')
         ActiveResource::HttpMock.respond_to do |mock|
           1.upto(10) do | number |
             bundles[number] = { 
@@ -27,14 +28,17 @@ class NodeTest < Test::Unit::TestCase
             }.to_xml(:root => 'bundle')
             mock.get    "/13/bundles/#{number}.xml",       {}, bundles[number]
           end
-          mock.get    "/13/bundles.xml",            {}, "<bunldes>#{bundles.join("\n")}</bundles>"  
+            mock.get    "/13/bundles.xml",  {}, "<bundles>#{bundles.join("\n")}</bundles>"  
         end
         
         @bundle_a = Bundle.find(1)
         @bundle_b = Bundle.find(2)
         @bundle_c = Bundle.find(3)
     end
-  
+    teardown do
+      de_mock
+    end
+     
     should "have functioning http mocks objects" do
       assert_not_nil Bundle.get(1)
       assert_not_nil Bundle.get(2)
