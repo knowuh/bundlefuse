@@ -29,7 +29,6 @@ class BundleTest < Test::Unit::TestCase
           assert_equal '/13/bundles.xml', Bundle.collection_path
         end
     end
-    
   end
 end
   
