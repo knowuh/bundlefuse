@@ -14,10 +14,10 @@ bundle_id = ARGV[0] || 79332
 puts "loading bundle information for #{bundle_id}..."
 bundle = Bundle.find(bundle_id)
   
-workgroup = Workgroup.find(bundle.workgroup_id)
+workgroup = bundle.workgroup
 puts "verify: bundle #{bundle_id} belongs to #{workgroup.name} (id:#{workgroup.id})"
 
-puts "\n\nBundle Config URL for this bundke is: #{bundle.config}"
+puts "\n\nBundle Config URL for this bundle is: #{bundle.config}"
 # %x[open #{bundle.config}]
 puts "jnlp url is : #{bundle.jnlp}"
 puts "calling open on this JNLP url: #{bundle.udl_launch_url}"

@@ -1,0 +1,13 @@
+this is the index view
+
+<table>
+<% @nodes.each do | node | %>
+
+	<tr class="node" id="node_<%= node.id %>">
+		<% @attributes.each do | attribute | %>
+			<td class="node_<%= attribute %>" id="node_<%= attribute %><%= node.id %>"> <%= node.send attribute %> </td>
+		<% end %>
+	</tr>
+
+<% end %>
+</table>

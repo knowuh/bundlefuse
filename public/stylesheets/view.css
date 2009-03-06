@@ -1,0 +1,92 @@
+body { 
+	color: #333;
+	background-color: #FFFFFF;
+	margin: 2px;
+	padding: 2px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size:   12px;
+	line-height: 2em;
+}
+
+
+#wrapper {
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #EEEEEE;
+	display: block;
+	clear: none;
+}
+
+
+#svgcanvas {
+	width: 30%;
+	height: 650px;
+	margin: 15px;
+	padding: 0px;
+	border-width: 1px;
+	border-color: black;
+	border-style: dashed;
+	float: left;
+	display: block;
+	vertical-align: top;
+}
+
+
+#offering {
+	vertical-align: top;
+	text-align: left;
+	font-size: 18px;
+	font-weight: normal;
+	border-width: 1px;
+	display: block;
+	float: right;
+	padding: 0px;
+	margin-top: 10px;
+	width: 60%;
+}
+
+#bundle_details {
+	font-size: 12px;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #552222;
+}
+#children { 
+	font-size: 12px;
+	line-height: 1em;
+}
+
+#parent { 
+	font-size: 12px;
+}
+#children ul{
+	white-space: normal;
+	line-height: 1em;
+}
+
+a:hover {
+	background-color: #FFFF00;
+}
+
+
+#diff {
+	font-size: 10px;
+	line-height: 1em;
+	height: 200px;
+	overflow: auto;
+	background-color: #eeeeee;
+	
+	font-family:"Courier New", Courier, monospace;
+	white-space: pre;
+}
+#my_timeline {
+	height: 200px;
+	width: 100%;
+	font-size: 9px;
+	line-height: 10px;
+	margin-top: 10px;
+}
+
+

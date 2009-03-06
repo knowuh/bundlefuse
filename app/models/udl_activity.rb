@@ -1,7 +1,7 @@
 class UdlActivity < ActiveResource::Base
   # TODO: dont hardcode he server address!
-  self.site = "http://udl.diy.concord.org/"
-  # self.site="http://localhost:3001"
+  # self.site = "http://udl.diy.concord.org/"
+  self.site="http://localhost:3001"
   self.element_name="external_otrunk_activity"
   
   def UdlActivity::find_by_offering(sds_id)

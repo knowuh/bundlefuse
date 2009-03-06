@@ -48,20 +48,20 @@ class NodeTest < Test::Unit::TestCase
     
     context "Nodes created by bundles" do
          should "be the same if they are created by the same bundles" do
-           @node = Node.forbundle(@bundle_a)
-           @second_node = Node.forbundle(@bundle_a)
+           @node = Node.for_bundle(@bundle_a)
+           @second_node = Node.for_bundle(@bundle_a)
            assert_equal @node,@second_node
          end
        
          should "be not be the same if they are created by different bundles" do
-           @node = Node.forbundle(@bundle_a)
-           @second_node = Node.forbundle(@bundle_b)
+           @node = Node.for_bundle(@bundle_a)
+           @second_node = Node.for_bundle(@bundle_b)
            assert_not_equal @node,@second_node
          end
        
          should "be the same if they are made from differing instances of the same bundle" do
-           @node = Node.forbundle(@bundle_b)
-           @second_node = Node.forbundle(Bundle.find(2))
+           @node = Node.for_bundle(@bundle_b)
+           @second_node = Node.for_bundle(Bundle.find(2))
            assert_equal @node,@second_node
          end
        end
@@ -136,5 +136,29 @@ class NodeTest < Test::Unit::TestCase
            assert_equal 2,@grampa.linears.size
          end
        end
+  end
+  
+  context "with Shana Woodell workgroup" do
+    setup do
+      de_mock
+      @bundle = Bundle.find(76566)  # UDL Shana Woodell 
+      @workgroup = @bundle.workgroup
+      puts 
+    end
+     
+    should "be a belonging to Shanna" do
+      assert_not_nil @bundle
+      assert_not_nil @workgroup
+      assert @workgroup.name == "Shana Woodell"
+    end
+    
+    should "create a set of nodes from workgroup" do
+      assert_not_nil @workgroup
+      node = Node::for_workgroup(@workgroup)
+      assert_not_nil node
+      puts node
+      puts "waiting for user input"
+      gets
+    end
   end
 end

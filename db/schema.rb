@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090226152823) do
+ActiveRecord::Schema.define(:version => 20090305175657) do
 
   create_table "nodes", :force => true do |t|
     t.integer  "bundle_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20090226152823) do
     t.datetime "start"
     t.datetime "end"
     t.text     "uuid"
+    t.string   "group_name"
   end
 
 end

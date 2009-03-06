@@ -5,11 +5,17 @@ class Bundle < ActiveResource::Base
   self.prefix='/13/'
 
   def contents
-    return BundleContents.find(bundle_content_id)
+    unless @contents
+      @contents =  BundleContents.find(bundle_content_id)
+    end
+    @contents
   end
   
   def workgroup
-    Workgroup.find(workgroup_id)  
+    unless @workgroup
+      @workgroup = Workgroup.find(workgroup_id)  
+    end
+    @workgroup
   end
   
   def config
@@ -19,7 +25,10 @@ class Bundle < ActiveResource::Base
   end
 
   def udl_activity
-    UdlActivity.find_by_offering(workgroup.offering_id)
+    unless @udl_activity
+      @udl_activity = UdlActivity.find_by_offering(workgroup.offering_id)
+    end
+    @udl_activity
   end
   
   def jnlp
@@ -29,14 +38,17 @@ class Bundle < ActiveResource::Base
   end
   
   def udl_launch_url
-    activity = udl_activity
-    otml_url = activity.sds_otml
-    otml_filename = activity.short_name
-    return make_sds_url(jnlp,
-      { :sailotrunk_otmlurl => otml_url,
-        :jnlp_filename => otml_filename
-      # :jnlp_properties => "sailotrunk.hidetree=false"
-      })
+    unless @udl_launch_url
+      activity = udl_activity
+      otml_url = activity.sds_otml
+      otml_filename = activity.short_name
+      @udl_launch_url =  make_sds_url(jnlp,
+        { :sailotrunk_otmlurl => otml_url,
+          :jnlp_filename => otml_filename
+        # :jnlp_properties => "sailotrunk.hidetree=false"
+        })
+    end
+    @udl_launch_url  
   end
   
 end

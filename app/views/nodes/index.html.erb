@@ -1,0 +1,41 @@
+this is the index view
+
+<table class="node_listing">
+	<tr class="node_header">
+		<th>
+			id
+		</th>
+		<th>
+			parent_id
+		</th>
+		<th>	
+			bundle_id
+		</th>
+		<th>
+			activity name
+		</th>
+		<th>
+			workgroup name
+		</th>
+	</tr>
+	<% @nodes.each do | node | %>
+		<tr class="node">
+			<th>
+				<%= link_to "#{node.bundle_id}", :action => "show", :id => node.id %>
+			</th>
+			<th>
+				<%= link_to "#{node.parent.bundle_id}", :action => "show", :id => node.parent_id %>
+			</th>
+			<th>	
+				<%= node.bundle_id %>
+			</th>
+			<th>	
+				<%= node.bundle.udl_activity.name %>
+			</th>
+			<th>
+				<%= node.workgroup.name %>
+			</th>
+		</tr>
+
+<% end %>
+</table>

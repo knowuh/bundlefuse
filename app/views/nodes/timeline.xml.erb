@@ -1,0 +1,15 @@
+<data>
+<% @nodes.each do | node | %>
+	<event 
+		start="<%= node.start %>" 
+		end="<%= node.end %>" 
+		isDuration="true" 
+		durationEvent="true" 
+		link="<%= node.id %>" 
+		title="<%= node.bundle.id %>">
+		Activity: <%= @activity.name %> 
+		Group: <%= @group.name %>
+		bundle: <%= @bundle.id %>
+	</event>
+<% end %>
+</data>

@@ -1,0 +1,86 @@
+<script type="text/javascript">
+	$(function() {
+		$('#svgcanvas').svg({onLoad: drawInitial});
+	});
+
+	function goUrl(url) {
+		window.location = url;
+	}
+
+	function load() {
+		setupTimeline('<%= @timeline_url %>');
+		to_time('Mon Jan 12 23:37:40 UTC 2009');
+	}
+	function hilight(evt,atr,value){
+		var T=evt.target
+		T.setAttributeNS(null,atr,value)
+	}
+	function defalutHandlers(svgelem) {
+		svgelem.setAttributeNS("onmouseover","hilight(evt, 'stroke-opacity',0.4)");
+		svgelem.setAttributeNS("onmouseout","hilight(evt, 'stroke-opacity',1)");
+	}
+	function drawInitial(svg) {
+		svg.load('<%= @svg_url %>',{addTo: false, onLoad: loadDone});
+	}
+	
+	function illuminate_node(id) {
+		$("svg g text:contains(id)").attr('style','fill: yellow; background-color: yellow')
+	}
+	function deluminate_node(id) {
+		$("svg g text:contains(id)").attr('style','fill: white; background-color: white')
+	}
+	
+	function loadDone(svg) {
+		$("svg ellipse").attr('style', "fill: white; stroke: black; font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 10px;");
+		$("svg ellipse").mouseover(function () {
+		         $(this).attr('style', "fill: yellow; stroke: black;")
+		});
+		$("svg ellipse").mouseout(function () {
+		         $(this).attr('node_id', $(this +"text").text)
+		});
+		$("svg g text:contains('<%= @node.bundle_id %>')").attr('style','font-size: 12px; font-weight: bold;')
+	}
+	
+</script>
+
+<div id="svgcanvas"></div>
+<div id="offering"><%= @activity.name %> <%= @group.name %>
+
+	<div id="parent">
+	<% if @node.parent %>
+		Parent: <%= link_to "show bundle #{@node.parent.bundle_id}", :action => "show", :id => @node.parent.id%>
+		<%= "#{@node.parent.start} - #{@node.parent.end}"%>
+	<% end %>
+	</div>
+		
+	<div id="bundle_details">
+	 <br/>
+	Group id: (id= <%= @group.id %>) <br/>
+	Node: <%= @node.id %> <br/>
+	Bundle: <%= @node.bundle_id %> <br/>
+	Timespan: <a href="#" onclick="to_time('<%= @node.start %>')"> <%= @node.start %> - <%= @node.end %> </a> <br/>
+	Config URL for this bundle is: <%= @bundle.config %> <br/>
+	Jnlp url is : <%= @bundle.jnlp %> <br/>
+	Launch URL: <%= @bundle.udl_launch_url  %> <br/>
+	<a href="<%= @bundle.udl_launch_url %>"> view this bundle </a>
+	</div>
+
+
+	<div id="children">
+	<% if @node.children %>
+	Children:
+		<ul>
+		<% @node.children.each do | child | %>
+			<li class="child"> 
+				<%= link_to "show bundle #{child.bundle_id}", :action => "show", :id => child.id%>
+				<%= child.start %> - <%= child.end %> </li>
+		<% end %>
+		</ul>
+	<% end %>
+	</div>
+	<!-- 
+	<div id="diff">diff goes here</div>
+	-->
+	<div id="my_timeline">(timeline info should show up here) </div>
+</div>
+

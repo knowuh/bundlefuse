@@ -1,0 +1,11 @@
+digraph "#{@workgroup.id}" {
+ 	labelloc=t;
+	size="4,10";
+	fontsize=9;
+<% @nodes.each do |node| %>
+	<%= node.bundle_id %>  [label="<%= node.bundle_id %>" URL="<%= node.id %>"]
+	<% if node.parent %>
+        <%= node.parent.bundle_id %> -> <%= node.bundle_id %>
+	<% end %>
+<% end %>
+}
