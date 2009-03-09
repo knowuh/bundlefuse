@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'OTMLUtil'
 
 class NodeTest < Test::Unit::TestCase
   require 'active_resource/http_mock'
@@ -24,7 +25,10 @@ class NodeTest < Test::Unit::TestCase
           1.upto(10) do | number |
             bundles[number] = { 
               :id => number, 
-              :sail_session_uuid => "%.4d" % number 
+              :sail_session_uuid => "%.4d" % number,
+              :sail_session_start_time => Time.now,
+              :sail_session_end_time => Time.now,
+              :sail_session_end_time => nil
             }.to_xml(:root => 'bundle')
             mock.get    "/13/bundles/#{number}.xml",       {}, bundles[number]
           end
@@ -135,6 +139,11 @@ class NodeTest < Test::Unit::TestCase
          should "have two linears" do
            assert_equal 2,@grampa.linears.size
          end
+         
+         should "all have the same root" do
+           assert @grampa.root == @papa.root
+           assert @baby.root == @papa.root
+         end
        end
   end
   
@@ -143,22 +152,32 @@ class NodeTest < Test::Unit::TestCase
       de_mock
       @bundle = Bundle.find(76566)  # UDL Shana Woodell 
       @workgroup = @bundle.workgroup
-      puts 
     end
      
     should "be a belonging to Shanna" do
-      assert_not_nil @bundle
       assert_not_nil @workgroup
       assert @workgroup.name == "Shana Woodell"
     end
     
     should "create a set of nodes from workgroup" do
-      assert_not_nil @workgroup
       node = Node::for_workgroup(@workgroup)
       assert_not_nil node
-      puts node
-      puts "waiting for user input"
-      gets
     end
+    
+    should "have a common root node" do
+      node = Node::for_workgroup(@workgroup)
+      node.descendants.each do | descendant |
+        assert descendant.root == node
+      end
+    end
+    
+    should "be able to merge learner data" do
+      node = Node::for_workgroup(@workgroup)
+      merged = node.merge_all_leaves
+      assert_not_nil merged
+      puts merged
+    end
+    
   end
+  
 end

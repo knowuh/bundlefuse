@@ -17,6 +17,5 @@ class XMLUtil
     
   end
   
-  def
 end
 

@@ -11,8 +11,9 @@ class WorkgroupsController < ApplicationController
   end
 
   def find
+    puts "id is #{params['id']}"
     @workgroup = Workgroup.find(params['id'])
-    @root_node = Node.for_workgroup(Workgroup.find(params['id']))
+    @root_node = Node.for_workgroup(@workgroup)
   end
   
   public
@@ -23,6 +24,10 @@ class WorkgroupsController < ApplicationController
   
   # show only the 
   def index
+    defaults = {
+      :offset => 0,
+      :limit => 40,
+    }
     offset = params['offset'] || 0
     @workgroups = Workgroup.find(:all, :limit => 100, :offset => offset)
     @attributes = [:id,:name]

@@ -33,20 +33,6 @@ class OTMLUtil
     return xslt.serve()
   end
   
-  # def vaidate_otml(otml)
-  #   document = nil
-  #   if File.exists?(otml)
-  #     document = LibXML::XML::Parser.file(otml).parse
-  #   else
-  #     document = LibXML::XML::Parser.string(otml).parse
-  #   end
-  #   # parse schema as xml document
-  #   relaxng_document = LibXML::XML::Document.file(@ot_schema_file)
-  #   relaxng_schema = LibXML::XML::RelaxNG.document(relaxng_document)
-  #   document.validate_relaxng(relaxng_schema) do |error| 
-  #     puts "encountered an error: #{error}"
-  #   end
-  # end
 
 end
 

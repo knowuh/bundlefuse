@@ -1,3 +1,4 @@
+require 'OTMLUtil'
 class Node < ActiveRecord::Base
   # see http://ar.rubyonrails.org/classes/ActiveRecord/Acts/Tree/ClassMethods.html
   acts_as_tree :order => "bundle_id"
@@ -48,12 +49,16 @@ class Node < ActiveRecord::Base
     return @bundle
   end
   
+  
   def workgroup
     unless @workgroup
-      @workgroup =  Workgroup.find(group_id)
+      if(group_id)
+        @workgroup =  Workgroup.find(group_id)
+      end
     end
     return @workgroup
   end
+  
   
   def workgroup=(workgroup)
     self.group_id=workgroup.id
@@ -134,6 +139,25 @@ class Node < ActiveRecord::Base
       d += child.duration
     end
     return duration
+  end
+  
+  
+  def merge_all_leaves
+    @otmlUtil = OTMLUtil.new()
+    all_leavs = self.root.leaves.sort { |a,b| a.start <=> b.start }
+    last_merge = nil
+    all_leavs.each  do | leaf |
+      contents = leaf.bundle.contents
+      next unless contents
+      learner_data = contents.learner_data
+      next unless learner_data
+      if last_merge
+        last_merge = @otmlUtil.merge_xml(last_merge,learner_data)
+      else
+        last_merge = learner_data
+      end
+    end
+    last_merge
   end
   
   

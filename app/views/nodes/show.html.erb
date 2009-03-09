@@ -33,10 +33,11 @@
 	function loadDone(svg) {
 		$("svg ellipse").attr('style', "fill: white; stroke: black; font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 10px;");
 		$("svg ellipse").mouseover(function () {
-		         $(this).attr('style', "fill: yellow; stroke: black;")
+		         $(this).attr('style', "fill: yellow; stroke: black")
 		});
+		
 		$("svg ellipse").mouseout(function () {
-		         $(this).attr('node_id', $(this +"text").text)
+		         $(this).attr('style', "fill: white; stroke: black")
 		});
 		$("svg g text:contains('<%= @node.bundle_id %>')").attr('style','font-size: 12px; font-weight: bold;')
 	}
@@ -62,7 +63,8 @@
 	Config URL for this bundle is: <%= @bundle.config %> <br/>
 	Jnlp url is : <%= @bundle.jnlp %> <br/>
 	Launch URL: <%= @bundle.udl_launch_url  %> <br/>
-	<a href="<%= @bundle.udl_launch_url %>"> view this bundle </a>
+	<a href="<%= @bundle.udl_launch_url %>"> view this bundle </a> <br/>
+	<%= link_to "Merge This workgroup...", :action => "merge", :id => @node.id %> 
 	</div>
 
 

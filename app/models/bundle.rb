@@ -40,7 +40,9 @@ class Bundle < ActiveResource::Base
   def udl_launch_url
     unless @udl_launch_url
       activity = udl_activity
-      otml_url = activity.sds_otml
+      # otml_url = activity.sds_otml
+      # TODO: probably should not do this directly actually. Best to read the overlay_otml and fetch OTML out.
+      otml_url = sailotrunk_otmlurl.gsub('overlay_otml','otml')
       otml_filename = activity.short_name
       @udl_launch_url =  make_sds_url(jnlp,
         { :sailotrunk_otmlurl => otml_url,
